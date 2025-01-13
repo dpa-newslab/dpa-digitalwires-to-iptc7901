@@ -1,0 +1,284 @@
+{
+  "format": "digitalwires@0.9.1",
+  "type": "composite",
+  "entry_id": "T1Z9JifB23PigBK1oqGX0EnnXAU9T6Mh5G7psFBofE",
+  "updated": "2024-10-22T09:11:40Z",
+  "urn": "urn:newsml:dpa.com:20090101:241022-930-267047",
+  "version_created": "2024-10-22T11:09:58+02:00",
+  "version": 1,
+  "pubstatus": "usable",
+  "signal": null,
+  "embargoed": "2024-10-22T11:30:00+02:00",
+  "content_created": null,
+  "language": "de",
+  "urgency": 4,
+  "kicker": "Alle Features auf einen Blick",
+  "headline": "Labwire-Testartikel veröffentlicht",
+  "subhead": null,
+  "teaser": "Alle Funktionalitäten von Rubix, dwx und digitalwires im Überblick.",
+  "byline": "Von Thomas Est",
+  "dateline": "Hamburg (dpa) - ",
+  "article_html": "<section class=\"main\"><p>Dieser Testartikel enthält alle aktuell in einem Text möglichen Funktionalitäten. Zum Beispiel:</p><h2>Zwischentitel</h2><p>Oder <a class=\"externalLink\" href=\"https://www.dpa.com/de\">Verlinkungen</a>. Enthalten sind aber auch Aufzählungen.</p><p>Nummerierte:</p><ol><li>Ein erster Punkt</li><li>Ein zweiter Punkt</li><li>Ein dritter Punkt</li></ol><p>Und nicht nummerierte:</p><ul><li>Ein Punkt</li><li>Ein weiterer Punkt</li><li>Ein ergänzender Punkt mit<br/>Zeilenumbruch</li></ul><p>Tabellen sind ebenfalls möglich:</p><figure class=\"table\"><table><thead><tr><th>Kopfzeile</th><th>Spalte 2</th><th>Spalte 3</th><th>Spalte 4</th></tr></thead><tbody><tr><td>Kategorie 1</td><td>Wert 1</td><td>Wert 2</td><td><p>Wert 3</p><p>mit Absatz</p></td></tr><tr><td>Kategorie 2</td><td>Wert 4</td><td>Wert 5 mit zwei Zeilen und<br/>einem Linebreak</td><td>Wert 6 mit zwei Zeilen</td></tr></tbody></table></figure><h2>Eingebettete Multimedia-Inhalte</h2><p>Twitter begann mit diesem Post:</p><dnl-twitterembed src=\"https://x.com/jack/status/20\"></dnl-twitterembed><p>Und YouTube mit diesem Video:</p><dnl-youtubeembed src=\"https://www.youtube-nocookie.com/embed/jNQXAC9IVRw\"></dnl-youtubeembed><p>Ein Multimedia-Inhalt kann aber auch ein Bild sein:</p><dnl-image ref=\"urn:newsml:dpa.com:20090101:241022-935-299327\" caption=\"Ein im Text positioniertes Bild.\" creditline=\"Julian Stratenschulte/dpa\"></dnl-image><p>Interaktive Webgrafiken sind ebenfalls möglich:</p><dnl-wgchart src=\"https://webgrafik.dpa-addons.com/webgrafik/items/aktuell/2024_10_21/hierWachsenKuerbisse/cont/index.html\"></dnl-wgchart></section>",
+  "infobox_html": null,
+  "linkbox_html": "<section class=\"linkbox\"><ul><li><a href=\"https://www.dpa.com/de\">Website der dpa</a></li></ul></section>",
+  "creditline": "dpa",
+  "copyrightnotice": "Copyright 2024, dpa (www.dpa.de). Alle Rechte vorbehalten",
+  "usageterms": "Nutzung nur nach schriftlicher Vereinbarung mit dpa",
+  "autopublishnotice": "© dpa-infocom, dpa:241022-930-267047/1",
+  "notepad": {
+    "header_html": "<header><h3>Notizblock</h3></header>",
+    "public_html": "<section class=\"np-public\"><h4>Redaktionelle Hinweise</h4><ul><li class=\"embargoed\">Sperrfrist 22. Oktober 09.30 Uhr</li><li>Weitere Zusammenfassung bis 1530 - ca. 60 Zl</li><li>Zu diesem Text finden Sie Bilder mit folgendem Titel im dpa Bildangebot:<ul><li>Herbst in Niedersachsen</li><li>Herbstwetter in Bayern</li></ul></li></ul><h4>Orte</h4><ul><li>[dpa Deutsche Presse-Agentur GmbH] (Mittelweg 38, 20148 Hamburg, Deutschland)</li><li>[Redaktion, dpa Deutsche Presse-Agentur GmbH] (Rudi-Dutschke-Straße 2, 10969 Berlin, Deutschland)</li></ul><h4>Internet</h4><ul><li><a href=\"https://www.dpa.com/de\">Website der dpa</a></li></ul></section>",
+    "nonpublic_html": "<section class=\"np-nonpublic\"><p class=\"np-constraint\">Die folgenden Informationen sind nicht zur Veröffentlichung bestimmt</p><h4>Ansprechpartner</h4><ul><li>Ansprechpartner 1, +49 1234 5678912, <a href=\"mailto:ap.1@example.com\">ap.1@example.com</a>, Ansprechpartnerin 2, +49 1234 89712, <a href=\"mailto:ansprech.partnerin@beispiel.org\">ansprech.partnerin@beispiel.org</a></li></ul><h4>Kontakte</h4><ul><li>Autor/in: dpa-Redaktion (Berlin), +49 30 2852 0, <a href=\"mailto:berlin@dpa.com\">berlin@dpa.com</a></li><li>Redaktion: dpa-Redaktion (Berlin), +49 30 2852 0, <a href=\"mailto:berlin@dpa.com\">berlin@dpa.com</a></li></ul></section>"
+  },
+  "ednotes": [
+    {
+      "role": "dpaednoterole:genrenote",
+      "ednote": "Multimedialer Test-Artikel",
+      "is_publishable": true
+    },
+    {
+      "role": "dpaednoterole:editorialnote",
+      "ednote": "Weitere Zusammenfassung bis 1530 - ca. 60 Zl",
+      "is_publishable": true
+    },
+    {
+      "role": "dpaednoterole:editorialnote",
+      "ednote": "Zu diesem Text finden Sie Bilder mit folgendem Titel im dpa Bildangebot:\nHerbst in Niedersachsen\nHerbstwetter in Bayern",
+      "is_publishable": true
+    },
+    {
+      "role": "dpaednoterole:embargo",
+      "ednote": "Nicht vor 22.10.2024, 11:30 Uhr verwenden",
+      "is_publishable": true
+    },
+    {
+      "role": "dpaednoterole:edservice",
+      "ednote": "Für weitere Informationen zum Thema nehmen Sie bitte Kontakt mit dem Support der dpa auf.",
+      "is_publishable": true
+    },
+    {
+      "role": "dpaednoterole:dpacontacts",
+      "ednote": "Autor/in: dpa-Redaktion (Berlin), +49 30 2852 0, berlin@dpa.com",
+      "is_publishable": false
+    },
+    {
+      "role": "dpaednoterole:dpacontacts",
+      "ednote": "Redaktion: dpa-Redaktion (Berlin), +49 30 2852 0, berlin@dpa.com",
+      "is_publishable": false
+    },
+    {
+      "role": "dpaednoterole:contacts",
+      "ednote": "Ansprechpartner 1, +49 1234 5678912, ap.1@example.com",
+      "is_publishable": false
+    },
+    {
+      "role": "dpaednoterole:contacts",
+      "ednote": "Ansprechpartnerin 2, +49 1234 89712, ansprech.partnerin@beispiel.org",
+      "is_publishable": false
+    },
+    {
+      "role": "dpaednoterole:picture",
+      "ednote": "Foto Archiv",
+      "is_publishable": true
+    },
+    {
+      "role": "dpaednoterole:closingline",
+      "ednote": "dpa dnl lbwr z2 dnl",
+      "is_publishable": true
+    }
+  ],
+  "descriptions": null,
+  "associations": [
+    {
+      "type": "image",
+      "urn": "urn:newsml:dpa.com:20090101:241022-935-299326",
+      "version": 9,
+      "rank": 1,
+      "version_created": "2024-10-22T11:09:55+02:00",
+      "headline": "Herbstwetter in Bayern",
+      "is_featureimage": true,
+      "caption": "Ein Schlaglicht auf alle aktuellen Funktionalitäten",
+      "creditline": "Peter Kneffel/dpa",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": 2048,
+          "height": 1371,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d1vdx0puhh6tge.cloudfront.net/v4/imgresize/crlpre3dwx/docid/urn:newsml:dpa.com:20090101:241022-935-299326/j4tccwcmsk-v9-ax-s2048.jpeg?signature=Vgp5N-3oUb3-tL4GZDSAMNOxov0&expires=1729728000"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "urn": "urn:newsml:dpa.com:20090101:241022-935-299327",
+      "version": 6,
+      "rank": 2,
+      "version_created": "2024-10-22T11:09:55+02:00",
+      "headline": "Herbst in Niedersachsen",
+      "is_featureimage": false,
+      "caption": "Ein im Text positioniertes Bild.",
+      "creditline": "Julian Stratenschulte/dpa",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": 2048,
+          "height": 1323,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d1vdx0puhh6tge.cloudfront.net/v4/imgresize/crlpre3dwx/docid/urn:newsml:dpa.com:20090101:241022-935-299327/tjmovirfuj-v6-ax-s2048.jpeg?signature=_hLUuI-uaffSg74IQOvmhtnKXWM&expires=1729728000"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "type": "dnltype:pubstatus",
+      "name": "usable",
+      "qcode": "stat:usable"
+    },
+    {
+      "type": "dnltype:wire",
+      "name": "bdt",
+      "qcode": "dpasrv:bdt"
+    },
+    {
+      "type": "dnltype:rubric",
+      "name": "weblines.labline.test2",
+      "qcode": "dnlpath:weblines.labline.test2"
+    },
+    {
+      "type": "dnltype:creator",
+      "name": "dpa-Redaktion",
+      "qcode": null,
+      "role": null
+    },
+    {
+      "type": "dnltype:contributor",
+      "name": "dpa-Redaktion",
+      "qcode": null,
+      "role": null
+    },
+    {
+      "type": "dnltype:dpasubject",
+      "name": "Technik",
+      "qcode": "dpasubject:300",
+      "rank": 1
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "Test",
+      "qcode": null,
+      "rank": 1
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "Multimedia",
+      "qcode": null,
+      "rank": 2
+    },
+    {
+      "type": "dnltype:geosubject",
+      "name": "Deutschland",
+      "qcode": "dpacountry:1",
+      "rank": 1
+    },
+    {
+      "type": "dnltype:geosubject",
+      "name": "Hamburg",
+      "qcode": "dpaarea:6",
+      "rank": 2
+    },
+    {
+      "type": "dnltype:desk",
+      "name": "Vermischtes",
+      "qcode": "dpacat:vm"
+    },
+    {
+      "type": "dnltype:genre",
+      "name": "Zusammenfassung",
+      "qcode": "dpatextgenre:26"
+    },
+    {
+      "type": "dnltype:poi",
+      "name": "dpa Deutsche Presse-Agentur GmbH",
+      "qcode": null,
+      "geojson": {
+        "geometry": {
+          "coordinates": [
+            9.9949,
+            53.56991
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "country": "Deutschland",
+          "formatted_address": "Mittelweg 38, 20148 Hamburg, Deutschland",
+          "administrative_area_level_1": "Hamburg",
+          "locality": "Hamburg",
+          "name": "dpa Deutsche Presse-Agentur GmbH"
+        }
+      }
+    },
+    {
+      "type": "dnltype:poi",
+      "name": "Redaktion, dpa Deutsche Presse-Agentur GmbH",
+      "qcode": null,
+      "geojson": {
+        "geometry": {
+          "coordinates": [
+            13.39612,
+            52.50726
+          ],
+          "type": "Point"
+        },
+        "type": "Feature",
+        "properties": {
+          "country": "Deutschland",
+          "formatted_address": "Rudi-Dutschke-Straße 2, 10969 Berlin, Deutschland",
+          "administrative_area_level_1": "Berlin",
+          "locality": "Berlin",
+          "name": "Redaktion, dpa Deutsche Presse-Agentur GmbH"
+        }
+      }
+    },
+    {
+      "type": "dnltype:urgency",
+      "name": "4",
+      "qcode": "urgency:4"
+    },
+    {
+      "type": "dnltype:provider",
+      "name": "dpa",
+      "qcode": "dnlprov:dpa"
+    }
+  ],
+  "current_rubric_names": [],
+  "rubric_names": [
+    "weblines.labline.test2"
+  ],
+  "dpasubject_names": [
+    "Technik"
+  ],
+  "geosubject_names": [
+    "Deutschland",
+    "Hamburg"
+  ],
+  "keyword_names": [
+    "Test",
+    "Multimedia"
+  ],
+  "desk_names": [
+    "vm"
+  ],
+  "genre_names": [
+    "Zusammenfassung"
+  ],
+  "poi_names": [
+    "dpa Deutsche Presse-Agentur GmbH",
+    "Redaktion, dpa Deutsche Presse-Agentur GmbH"
+  ],
+  "scope_names": []
+}

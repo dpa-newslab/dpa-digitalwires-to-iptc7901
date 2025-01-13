@@ -1,0 +1,145 @@
+{
+  "format": "digitalwires@0.9.1",
+  "type": "composite",
+  "entry_id": "4H0zMhGkn58LCxwx22YCMOFJH3DVF6q8Z0qJETiGUQ",
+  "updated": "2024-11-20T14:06:18Z",
+  "urn": "urn:newsml:dpa.com:20090101:241120-99-92781",
+  "version_created": "2024-11-20T15:00:05+01:00",
+  "version": 6,
+  "pubstatus": "usable",
+  "signal": null,
+  "embargoed": null,
+  "content_created": null,
+  "language": "de",
+  "urgency": 3,
+  "kicker": null,
+  "headline": "dpa/audio-Programm f\u00fcr Mittwoch, 20. November 2024, 15 Uhr",
+  "subhead": null,
+  "teaser": null,
+  "byline": null,
+  "dateline": null,
+  "article_html": "<section class=\"main\"><p><strong>Ihr Ansprechpartner: Thomas Brockt, Tel. (030) 2852-31360<br/>E-Mail: audio@dpa.com <br/><br/></strong>FORD WILL IN DEUTSCHLAND 2.900 STELLEN ABBAUEN<br/>Der US-Autobauer Ford will bis Ende 2027 in Deutschland 2.900 Stellen abbauen und so die Kosten senken. Die meisten Arbeitspl\u00e4tze sollen im K\u00f6lner Werk wegfallen, wie das Unternehmen weiter mitteilte. Knapp zwei Milliarden Euro hat Ford in diesen Standort investiert, um E-Autos zu produzieren - der Absatz ist jedoch mau geblieben.<br/>Benedikt Meise berichtet.<br/>- 15.30 N\u00a0(versendet)<br/><br/><br/>SCHOLZ ZUR\u00dcCK IN BERLIN: K-FRAGE GEHT WEITER<br/>Nach drei Tagen beim G20-Gipfel in Rio de Janeiro ist Bundeskanzler Olaf Scholz zur\u00fcck in Berlin. In den n\u00e4chsten Tagen wird es f\u00fcr ihn und seine Partei um die viel diskutierte Frage gehen: Soll nun Scholz Kanzlerkandidat der SPD werden oder Verteidigungsminister Boris Pistorius? Der Parteivorstand hat sich noch nicht festgelegt.<br/>Thomas Bleskin berichtet.<br/>- 15.30 N (versendet)<br/><br/><br/>MEDIEN: LIAM PAYNE SOLL HEUTE BEIGESETZT WERDEN<br/>Sein Tod l\u00f6ste weltweit gro\u00dfe Trauer bei Fans der Band One Direction aus. Heute soll Liam Payne in Buckinghamshire, nordwestlich von London, seine letzte Ruhest\u00e4tte finden, berichten britische Medien. Philip Dethlefs berichtet aus London.<br/>- 15.30 Mod-N<br/></p></section>",
+  "infobox_html": null,
+  "linkbox_html": null,
+  "creditline": "dpa",
+  "copyrightnotice": "Copyright 2024, dpa (www.dpa.de). Alle Rechte vorbehalten",
+  "usageterms": "Nutzung nur nach schriftlicher Vereinbarung mit dpa\nUse only with the written agreement with dpa",
+  "autopublishnotice": null,
+  "notepad": {
+    "header_html": null,
+    "public_html": null,
+    "nonpublic_html": null
+  },
+  "ednotes": [
+    {
+      "role": "dpaednoterole:closingline",
+      "ednote": "dpa s5 tbr",
+      "is_publishable": true
+    }
+  ],
+  "descriptions": null,
+  "associations": [],
+  "categories": [
+    {
+      "type": "dnltype:pubstatus",
+      "name": "usable",
+      "qcode": "stat:usable"
+    },
+    {
+      "type": "dnltype:wire",
+      "name": "bdt",
+      "qcode": "dpasrv:bdt"
+    },
+    {
+      "type": "dnltype:wire",
+      "name": "bid",
+      "qcode": "dpasrv:bid"
+    },
+    {
+      "type": "dnltype:wire",
+      "name": "hfk",
+      "qcode": "dpasrv:hfk"
+    },
+    {
+      "type": "dnltype:wire",
+      "name": "kom",
+      "qcode": "dpasrv:kom"
+    },
+    {
+      "type": "dnltype:creator",
+      "name": "brockt",
+      "qcode": null,
+      "role": null
+    },
+    {
+      "type": "dnltype:contributor",
+      "name": "brockt",
+      "qcode": "dpa-ad:brockt",
+      "role": null
+    },
+    {
+      "type": "dnltype:dpasubject",
+      "name": "Vorschau",
+      "qcode": "dpasubject:432",
+      "rank": 1
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "dpa",
+      "qcode": null,
+      "rank": 1
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "Audio",
+      "qcode": null,
+      "rank": 2
+    },
+    {
+      "type": "dnltype:geosubject",
+      "name": "Deutschland",
+      "qcode": "dpacountry:1",
+      "rank": 1
+    },
+    {
+      "type": "dnltype:desk",
+      "name": "rs",
+      "qcode": "dpacat:rs"
+    },
+    {
+      "type": "dnltype:genre",
+      "name": "Vorschau",
+      "qcode": "dpatextgenre:32"
+    },
+    {
+      "type": "dnltype:urgency",
+      "name": "3",
+      "qcode": "urgency:3"
+    },
+    {
+      "type": "dnltype:provider",
+      "name": "dpa",
+      "qcode": "dnlprov:dpa"
+    }
+  ],
+  "current_rubric_names": [],
+  "rubric_names": [],
+  "dpasubject_names": [
+    "Vorschau"
+  ],
+  "geosubject_names": [
+    "Deutschland"
+  ],
+  "keyword_names": [
+    "dpa",
+    "Audio"
+  ],
+  "desk_names": [
+    "rs"
+  ],
+  "genre_names": [
+    "Vorschau"
+  ],
+  "poi_names": [],
+  "scope_names": []
+}

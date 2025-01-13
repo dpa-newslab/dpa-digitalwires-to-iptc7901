@@ -1,0 +1,171 @@
+        {
+            "format": "digitalwires@0.9.1",
+            "type": "composite",
+            "entry_id": "OxcLr0OOv8vVjYNg8K3raMdvTIMQKe2UDoUiN41dPAQ",
+            "updated": "2024-09-25T16:54:05Z",
+            "urn": "urn:newsml:dpa.com:20090101:240925-930-243473",
+            "version_created": "2024-09-25T18:52:17+02:00",
+            "version": 1,
+            "pubstatus": "usable",
+            "signal": null,
+            "embargoed": null,
+            "content_created": null,
+            "language": "de",
+            "urgency": 4,
+            "kicker": "Behinderung auf Strecke",
+            "headline": "Baum auf Bahnstrecke bei Peine - Versp\u00e4tungen",
+            "subhead": null,
+            "teaser": "Ein umgest\u00fcrzter Baum behindert den Bahnverkehr zwischen Peine und H\u00e4melerwald. Berufspendler mussten am Abend Geduld haben.",
+            "byline": null,
+            "dateline": "Peine (dpa/lni) - ",
+            "article_html": "<section class=\"main\"><p>Ein umgest\u00fcrzter Baum hat auf der Bahnstrecke zwischen H\u00e4melerwald und Peine vor\u00fcbergehend f\u00fcr eine Vollsperrung gesorgt. Die Fernz\u00fcge wurden seit 16.00 Uhr \u00fcber Hildesheim umgeleitet, wie ein Bahnsprecher sagte. Im Fernverkehr gab es Versp\u00e4tungen. Die Westfalenbahn informierte auf X, dass Regionalz\u00fcge nicht fahren und auf die Freigabe der Strecke warten. Am Abend wurde das Gleis in Richtung Hannover wieder entsperrt, die Gegenstrecke sollte zeitnah folgen, erg\u00e4nzte der Sprecher.\u00a0</p></section>",
+            "infobox_html": null,
+            "linkbox_html": "<section class=\"linkbox\"><ul><li><a href=\"https://dpaq.de/m8aupW3\">Post auf X der Westfalenbahn</a></li></ul></section>",
+            "creditline": "dpa",
+            "copyrightnotice": "Copyright 2024, dpa (www.dpa.de). Alle Rechte vorbehalten",
+            "usageterms": "Nutzung nur nach schriftlicher Vereinbarung mit dpa\nUse only with the written agreement with dpa",
+            "autopublishnotice": null,
+            "notepad": {
+                "header_html": "<header><h3>Notizblock</h3></header>",
+                "public_html": "<section class=\"np-public\"><h4>Redaktionelle Hinweise</h4><ul><li>Zu diesem Text finden Sie Bilder mit folgendem Titel im dpa Bildangebot:</li><li>ICE</li></ul><h4>Internet</h4><ul><li><a href=\"https://dpaq.de/m8aupW3\">Post auf X der Westfalenbahn</a></li></ul><h4>Orte</h4><ul><li>[Peine](31 Peine, Deutschland)</li></ul></section>",
+                "nonpublic_html": "<section class=\"np-nonpublic\"><p>Die folgenden Informationen sind nicht zur Ver\u00f6ffentlichung bestimmt</p><h4>Kontakte</h4><ul><li>Autor/in: Britta K\u00f6rber (L\u00fcneburg) 0171 5578772, koerber.britta@dpa.com</li><li>Redaktion: Sophia-Caroline Kosel (Berlin) 030/2852 30002, kosel.sophia-caroline@dpa.com</li></ul></section>"
+            },
+            "ednotes": [
+                {
+                    "role": "dpaednoterole:closingline",
+                    "ednote": "dpa koe yyno n1 sck",
+                    "is_publishable": true
+                },
+                {
+                    "role": "dpaednoterole:editorialnote",
+                    "ednote": "Zu diesem Text finden Sie Bilder mit folgendem Titel im dpa Bildangebot:",
+                    "is_publishable": true
+                },
+                {
+                    "role": "dpaednoterole:editorialnote",
+                    "ednote": "ICE",
+                    "is_publishable": true
+                },
+                {
+                    "role": "dpaednoterole:dpacontacts",
+                    "ednote": "Autor/in: Britta K\u00f6rber (L\u00fcneburg) 0171 5578772, koerber.britta@dpa.com",
+                    "is_publishable": false
+                },
+                {
+                    "role": "dpaednoterole:dpacontacts",
+                    "ednote": "Redaktion: Sophia-Caroline Kosel (Berlin) 030/2852 30002, kosel.sophia-caroline@dpa.com",
+                    "is_publishable": false
+                },
+                {
+                    "role": "dpaednoterole:picture",
+                    "ednote": "Foto Illustration",
+                    "is_publishable": true
+                }
+            ],
+            "descriptions": null,
+            "associations": [],
+            "categories": [
+                {
+                    "type": "dnltype:pubstatus",
+                    "name": "usable",
+                    "qcode": "stat:usable"
+                },
+                {
+                    "type": "dnltype:wire",
+                    "name": "nsb",
+                    "qcode": "dpasrv:nsb"
+                },
+                {
+                    "type": "dnltype:creator",
+                    "name": "kosel",
+                    "qcode": null,
+                    "role": null
+                },
+                {
+                    "type": "dnltype:contributor",
+                    "name": "kosel",
+                    "qcode": "dpa-ad:kosel",
+                    "role": null
+                },
+                {
+                    "type": "dnltype:dpasubject",
+                    "name": "Verkehr",
+                    "qcode": "dpasubject:232",
+                    "rank": 1
+                },
+                {
+                    "type": "dnltype:dpasubject",
+                    "name": "Bahn",
+                    "qcode": "medtop:20000340",
+                    "rank": 2
+                },
+                {
+                    "type": "dnltype:geosubject",
+                    "name": "Niedersachsen",
+                    "qcode": "dpaarea:9",
+                    "rank": 1
+                },
+                {
+                    "type": "dnltype:desk",
+                    "name": "vm",
+                    "qcode": "dpacat:vm"
+                },
+                {
+                    "type": "dnltype:genre",
+                    "name": "Meldung",
+                    "qcode": "dpatextgenre:1"
+                },
+                {
+                    "type": "dnltype:poi",
+                    "name": "Peine, 31 Peine, Deutschland",
+                    "qcode": null,
+                    "geojson": {
+                        "type": "Feature",
+                        "properties": {
+                            "name": "Peine",
+                            "formatted_address": "31 Peine, Deutschland",
+                            "locality": "Peine",
+                            "administrative_area_level_1": "31 Peine, Deutschland",
+                            "country": "Deutschland"
+                        },
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [
+                                10.24327,
+                                52.32041
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "dnltype:urgency",
+                    "name": "4",
+                    "qcode": "urgency:4"
+                },
+                {
+                    "type": "dnltype:provider",
+                    "name": "dpa",
+                    "qcode": "dnlprov:dpa"
+                }
+            ],
+            "current_rubric_names": [],
+            "rubric_names": [],
+            "dpasubject_names": [
+                "Verkehr",
+                "Bahn"
+            ],
+            "geosubject_names": [
+                "Niedersachsen"
+            ],
+            "keyword_names": [],
+            "desk_names": [
+                "vm"
+            ],
+            "genre_names": [
+                "Meldung"
+            ],
+            "poi_names": [
+                "Peine, 31 Peine, Deutschland"
+            ],
+            "scope_names": []
+        }

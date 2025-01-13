@@ -1,0 +1,157 @@
+{
+      "format": "digitalwires@0.9.1",
+      "type": "composite",
+      "entry_id": "lywIR1bjgPwvhAm5mUZ08nzl6y5uitbshCkg8TALE",
+      "updated": "2024-09-25T09:01:51Z",
+      "urn": "urn:newsml:dpa.com:20090101:240925-930-242782",
+      "version_created": "2024-09-25T11:00:37+02:00",
+      "version": 1,
+      "pubstatus": "usable",
+      "signal": null,
+      "embargoed": null,
+      "content_created": null,
+      "language": "de",
+      "urgency": 4,
+      "kicker": null,
+      "headline": "Folgende Lesestücke des Ressorts Politik sind weiter aktuell",
+      "subhead": null,
+      "teaser": null,
+      "byline": null,
+      "dateline": null,
+      "article_html": "<section class=\"main\"><p></p><p>Fragen-und-Antworten «Was Israel im Libanon erreichen will - und was droht» vom 24.9. https://dpaq.de/XswLGji </p><p>KORR-Bericht «Generalprobe im Landtag - Steht die Allianz gegen die AfD?» vom 24.9. https://dpaq.de/tq5rNjj</p><p>KORR-Bericht «Aufstieg im Osten: AfD und BSW saugen den Protest auf» vom 23.9. https://dpaq.de/PIBlhqx</p><p>KORR-Bericht «Diese sieben \"Swing States\" entscheiden die US-Wahl» vom 23.9. https://dpaq.de/QoQ4FqD</p><p>KORR-Bericht «Wahl in Österreich: Schmilzt der Vorsprung der rechten FPÖ?» vom 23.9. https://dpaq.de/nwCeiWS</p><p>KORR-Bericht «Es kam wie aus heiterem Himmel - Ein Jahr nach dem 7. Oktober» zum 7.10. https://dpaq.de/ZHHnE7q</p><p>KORR-Bericht «Führen aus der zweiten Reihe hat bei der AfD Tradition» vom 19.9. https://dpaq.de/tDxT8CF</p><p>KORR-Bericht «Es ruckelt - Steinmeier erhält in zweiter Amtszeit Gegenwind» vom 16.9. https://dpaq.de/0YRQMY0</p><p></p></section>",
+      "infobox_html": null,
+      "linkbox_html": null,
+      "creditline": "dpa",
+      "copyrightnotice": "Copyright 2024, dpa (www.dpa.de). Alle Rechte vorbehalten",
+      "usageterms": "Nutzung nur nach schriftlicher Vereinbarung mit dpa\nUse only with the written agreement with dpa",
+      "autopublishnotice": null,
+      "notepad": {
+        "header_html": "<header><h3>Notizblock</h3></header>",
+        "public_html": null,
+        "nonpublic_html": "<section class=\"np-nonpublic\"><p>Die folgenden Informationen sind nicht zur Veröffentlichung bestimmt</p><h4>Kontakte</h4><ul><li>Autor/in: Politik Ausland</li><li>Redaktion: Politik-Inland</li></ul></section>"
+      },
+      "ednotes": [
+        {
+          "role": "dpaednoterole:genrenote",
+          "ednote": "Planungshinweis",
+          "is_publishable": true
+        },
+        {
+          "role": "dpaednoterole:closingline",
+          "ednote": "dpa yyzz s5 vee",
+          "is_publishable": true
+        },
+        {
+          "role": "dpaednoterole:dpacontacts",
+          "ednote": "Autor/in: Politik Ausland",
+          "is_publishable": false
+        },
+        {
+          "role": "dpaednoterole:dpacontacts",
+          "ednote": "Redaktion: Politik-Inland",
+          "is_publishable": false
+        }
+      ],
+      "descriptions": null,
+      "associations": [],
+      "categories": [
+        {
+          "type": "dnltype:pubstatus",
+          "name": "usable",
+          "qcode": "stat:usable"
+        },
+        {
+          "type": "dnltype:wire",
+          "name": "bdt",
+          "qcode": "dpasrv:bdt"
+        },
+        {
+          "type": "dnltype:wire",
+          "name": "bid",
+          "qcode": "dpasrv:bid"
+        },
+        {
+          "type": "dnltype:wire",
+          "name": "edi",
+          "qcode": "dpasrv:edi"
+        },
+        {
+          "type": "dnltype:wire",
+          "name": "edt",
+          "qcode": "dpasrv:edt"
+        },
+        {
+          "type": "dnltype:wire",
+          "name": "erd",
+          "qcode": "dpasrv:erd"
+        },
+        {
+          "type": "dnltype:creator",
+          "name": "eschbacher.veronika",
+          "qcode": null,
+          "role": null
+        },
+        {
+          "type": "dnltype:contributor",
+          "name": "eschbacher.veronika",
+          "qcode": "dpa-ad:eschbacher.veronika",
+          "role": null
+        },
+        {
+          "type": "dnltype:dpasubject",
+          "name": "Vorschau",
+          "qcode": "dpasubject:432",
+          "rank": 1
+        },
+        {
+          "type": "dnltype:geosubject",
+          "name": "International",
+          "qcode": "dpacountry:196",
+          "rank": 1
+        },
+        {
+          "type": "dnltype:geosubject",
+          "name": "Deutschland",
+          "qcode": "dpacountry:1",
+          "rank": 2
+        },
+        {
+          "type": "dnltype:desk",
+          "name": "pl",
+          "qcode": "dpacat:pl"
+        },
+        {
+          "type": "dnltype:genre",
+          "name": "Achtung",
+          "qcode": "dpatextgenre:27"
+        },
+        {
+          "type": "dnltype:urgency",
+          "name": "4",
+          "qcode": "urgency:4"
+        },
+        {
+          "type": "dnltype:provider",
+          "name": "dpa",
+          "qcode": "dnlprov:dpa"
+        }
+      ],
+      "current_rubric_names": [],
+      "rubric_names": [],
+      "dpasubject_names": [
+        "Vorschau"
+      ],
+      "geosubject_names": [
+        "International",
+        "Deutschland"
+      ],
+      "keyword_names": [],
+      "desk_names": [
+        "pl"
+      ],
+      "genre_names": [
+        "Achtung"
+      ],
+      "poi_names": [],
+      "scope_names": []
+    }

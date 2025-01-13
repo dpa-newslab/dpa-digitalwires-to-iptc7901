@@ -1,0 +1,3215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowledgeItem xmlns="http://iptc.org/std/nar/2006-10-01/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" guid="urn:newsml:g2.dpa.com:20090101:service" standard="NewsML-G2" standardversion="2.34" version="23" xml:lang="de" xsi:schemaLocation="http://iptc.org/std/nar/2006-10-01/">
+	<catalogRef href="http://g2.dpa.com/catalog/catalog001.xml"/>
+	<catalogRef href="http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_18.xml"/>
+	<itemMeta>
+		<itemClass qcode="cinat:scheme"/>
+		<provider qcode="nprov:dpa"/>
+		<versionCreated>2021-05-05T12:00:00+02:00</versionCreated>
+		<pubStatus qcode="stat:usable"/>
+	</itemMeta>
+	<conceptSet>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:b2b"/>
+			<name role="nrol:full">B2B-Portal</name>
+			<name role="nrol:mnemonic">b2b</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvbdt">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bdt"/>
+			<name role="nrol:mnemonic">bdt</name>
+			<name role="nrol:full">Basisdienst</name>
+			<sameAs qcode="dpax-sapmatnr:1"/>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2015-12-11T13:00:00+01:00" qcode="dpasrv:spe"/>
+			<name role="nrol:mnemonic">spe</name>
+			<name role="nrol:full">Sport Ergebnisdienst</name>
+			<broader qcode="dpaagenturzeichen:dpa-spe"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2016-08-11T13:00:00+02:00" qcode="dpasrv:apwire"/>
+			<name role="nrol:mnemonic">apwire</name>
+			<name role="nrol:full">Original AP Wire</name>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrveca">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:eca"/>
+			<name role="nrol:mnemonic">eca</name>
+			<name role="nrol:full">Englischer Dienst</name>
+			<name role="nrol:display" xml:lang="en">dpa international</name>
+			<note xml:lang="en">This service contains text message in English language only</note>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:eca-mm"/>
+			<name role="nrol:mnemonic">eca-mm</name>
+			<name role="nrol:full">Englischer Dienst multimedial</name>
+			<name role="nrol:display" xml:lang="en">dpa international multi media</name>
+			<note xml:lang="en">This service contains text message in English language with links to media items</note>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrveca-3p">
+			<conceptId created="2018-09-26T13:00:00+01:00" qcode="dpasrv:eca-3p"/>
+			<name role="nrol:mnemonic">ecp</name>
+			<name role="nrol:full">Englischer Dienst 3P</name>
+			<name role="nrol:display" xml:lang="en">dpa international 3p</name>
+			<note xml:lang="en">This service contains text message from third parties in English language only</note>
+			<sameAs qcode="dpax-sapmatnr:9889"/>
+			<broader qcode="dpaagenturzeichen:dpa-tns"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" retired="2019-01-16T13:00:00+01:00" qcode="dpasrv:ldi"/>
+			<name role="nrol:mnemonic">ldi</name>
+			<name role="nrol:full">Spanischer Dienst</name>
+			<name role="nrol:display" xml:lang="es">dpa internacional</name>
+			<note xml:lang="en">This service contains text message in Spanish language only</note>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+		</concept>
+		<concept id="dpasrverd">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:erd"/>
+			<name role="nrol:mnemonic">erd</name>
+			<name role="nrol:full">Europadienst</name>
+			<name role="nrol:display" xml:lang="de">dpa-Europadienst</name>
+			<broader qcode="dpaagenturzeichen:dpa-euro"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:fbi"/>
+			<name role="nrol:full">Zentrale Bilderdienst</name>
+			<name role="nrol:mnemonic">fbi</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:gtk"/>
+			<name role="nrol:full">Gedenktagekalender</name>
+			<name role="nrol:mnemonic">gtk</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-03-16T13:00:00+01:00" qcode="dpasrv:mka"/>
+			<name role="nrol:full">Monatskalender</name>
+			<name role="nrol:mnemonic">mka</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:jvo"/>
+			<name role="nrol:full">Jahresterminvorschau</name>
+			<name role="nrol:mnemonic">jvo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lah" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lah</name>
+			<name role="nrol:full">Landesdienst Sachsen-Anhalt</name>
+			<sameAs qcode="dpasrv:aht"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lbn" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lbn</name>
+			<name role="nrol:full">Landesdienst Berlin/Brandenburg</name>
+			<sameAs qcode="dpasrv:brb"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lby" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lby</name>
+			<name role="nrol:full">Landesdienst Bayern</name>
+			<sameAs qcode="dpasrv:bay"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lhe" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lhe</name>
+			<name role="nrol:full">Landesdienst Hessen</name>
+			<sameAs qcode="dpasrv:hes"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lmv" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lmv</name>
+			<name role="nrol:full">Landesdienst Mecklenburg-Vorpommern</name>
+			<sameAs qcode="dpasrv:mbv"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lni" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lni</name>
+			<name role="nrol:full">Landesdienst Niedersachsen/Bremen</name>
+			<sameAs qcode="dpasrv:nsb"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lno" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lno</name>
+			<name role="nrol:full">Landesdienst Nord</name>
+			<sameAs qcode="dpasrv:hsh"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lnw" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lnw</name>
+			<name role="nrol:full">Landesdienst Nordrhein-Westfalen</name>
+			<sameAs qcode="dpasrv:nwf"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lrs" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lrs</name>
+			<name role="nrol:full">Landesdienst Rheinland-Pfalz/Saarland</name>
+			<sameAs qcode="dpasrv:rhs"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lsn" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lsn</name>
+			<name role="nrol:full">Landesdienst Sachsen</name>
+			<sameAs qcode="dpasrv:san"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lsu" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lsu</name>
+			<name role="nrol:full">Landesdienste Südost</name>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lsw" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lsw</name>
+			<name role="nrol:full">Landesdienst Baden-Württemberg</name>
+			<sameAs qcode="dpasrv:bwg"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:lth" retired="2014-03-31T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">lth</name>
+			<name role="nrol:full">Landesdienst Thüringen</name>
+			<sameAs qcode="dpasrv:thg"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:MCH"/>
+			<name role="nrol:full">Monatschronik</name>
+			<name role="nrol:mnemonic">MCH</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:ndk"/>
+			<name role="nrol:full">Nachrichtendienst Kinder</name>
+			<name role="nrol:mnemonic">ndk</name>
+			<definition>ToDo</definition>
+			<sameAs qcode="dpax-sapmatnr:616"/>
+			<broader qcode="dpaagenturzeichen:dpa-knd"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:rdt"/>
+			<name role="nrol:full">Reportagedienst</name>
+			<name role="nrol:mnemonic">rdt</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:tvo"/>
+			<name role="nrol:full">Tagesvorschau</name>
+			<name role="nrol:mnemonic">tvo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wvo"/>
+			<name role="nrol:mnemonic">wvo</name>
+			<name role="nrol:full">Wochenvorschau</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:4wvo"/>
+			<name role="nrol:full">Vierwochenvorschau</name>
+			<name role="nrol:mnemonic">4wvo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:event"/>
+			<name role="nrol:mnemonic">event</name>
+			<name role="nrol:full">EventData</name>
+			<definition>ToDo</definition>
+			<sameAs qcode="dpax-sapmatnr:1425"/>
+			<related qcode="cpnat:event"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bbasis" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">bbasis</name>
+			<name role="nrol:full">dpa Bildfunk</name>
+			<definition>ToDo</definition>
+			<sameAs qcode="dpax-sapmatnr:69"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bkind" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:full">Bildfunk Kinder</name>
+			<name role="nrol:mnemonic">bkind</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bobs" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:full">Original Bilder Service</name>
+			<name role="nrol:mnemonic">obs</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpasrv:section-de-obs"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+		</concept>
+		<concept id="dpasrvbmag">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bmag" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:full">Magazin</name>
+			<name role="nrol:mnemonic">mag</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trends"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:btmn" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:mnemonic">btmn</name>
+			<name role="nrol:full">Themendienst Bild</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trends"/>
+		</concept>
+		<concept id="dpasrvbzbreg">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bzbreg" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:full">ZB-Regio</name>
+			<name role="nrol:mnemonic">bzbreg</name>
+			<definition>ToDo</definition>
+			<sameAs qcode="dpax-sapmatnr:380"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpazb"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:barch" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:full">Report</name>
+			<name role="nrol:mnemonic">report</name>
+			<definition>ToDo</definition>
+			<sameAs qcode="dpax-sapmatnr:75"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bepai" retired="2016-12-31T23:59:59+01:00"/>
+			<name role="nrol:mnemonic">epa-i</name>
+			<name role="nrol:full">epa-i</name>
+			<definition>Dieser Dienst umfasst das Material, das die dpa für den epa Dienst bereitstellt.</definition>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bdpai" retired="2017-06-30T13:00:00+02:00"/>
+			<name role="nrol:full">dpa-i</name>
+			<name role="nrol:mnemonic">dpa-i</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bb2btop100"/>
+			<name role="nrol:mnemonic">bb2btop100</name>
+			<name role="nrol:full">B2B Top 100 Bilder</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:blatam" retired="2016-03-23T10:00:00+01:00"/>
+			<name role="nrol:mnemonic">latam</name>
+			<name role="nrol:full">dpa Lateinamerika Bilderdienst</name>
+			<name role="nrol:full" xml:lang="es">dpa Fotografia</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2011-12-15T13:00:00+01:00" qcode="dpasrv:bweblines" retired="2016-08-18T11:00:00+02:00"/>
+			<name role="nrol:full">infocom WebLines</name>
+			<name role="nrol:mnemonic">weblines</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:anstueck"/>
+			<name role="nrol:full">dpa Rufa Nachrichtenstück</name>
+			<name role="nrol:mnemonic">n-stueck</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:aoton"/>
+			<name role="nrol:mnemonic">o-ton</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:ao-ton"/>
+			<name role="nrol:mnemonic">O-Ton</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:aumfrage"/>
+			<name role="nrol:mnemonic">Umfrage</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:atalk"/>
+			<name role="nrol:mnemonic">talk retired</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:atalk_interview"/>
+			<name role="nrol:mnemonic">talk_interview</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:ainterview"/>
+			<name role="nrol:mnemonic">Interview</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:akorri-talk"/>
+			<name role="nrol:mnemonic">Korri-Talk</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:abunt"/>
+			<name role="nrol:mnemonic">bunt</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:anachrichten_lang"/>
+			<name role="nrol:mnemonic">nachrichten_lang</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:anachrichten_kurz"/>
+			<name role="nrol:mnemonic">nachrichten_kurz</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:akinder"/>
+			<name role="nrol:mnemonic">audiokinder</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-04-26T14:00:00+02:00" qcode="dpasrv:aors"/>
+			<name role="nrol:mnemonic">ors</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-02-01T14:00:00+02:00" qcode="dpasrv:audio"/>
+			<name role="nrol:mnemonic">dpaaudio</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2020-08-18T16:00:00+02:00" qcode="dpasrv:awetter"/>
+			<name role="nrol:mnemonic">wetter</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2020-08-18T16:00:00+02:00" qcode="dpasrv:awetter_regional"/>
+			<name role="nrol:mnemonic">wetter_regional</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2020-08-18T16:00:00+02:00" qcode="dpasrv:awirtschaft"/>
+			<name role="nrol:mnemonic">Wirtschaft</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-03-12T12:00:00+02:00" qcode="dpasrv:awirtschaft-bigfm"/>
+			<name role="nrol:mnemonic">Wirtschaft-BigFM</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-03-12T12:00:00+02:00" qcode="dpasrv:awirtschaft-bawue"/>
+			<name role="nrol:mnemonic">Wirtschaft-BaWue</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2020-08-18T16:00:00+02:00" qcode="dpasrv:aatmo"/>
+			<name role="nrol:mnemonic">Atmo</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:aradio24"/>
+			<name role="nrol:mnemonic">radio24</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:azaudiohub-oton"/>
+			<name role="nrol:mnemonic">zAudiohub-Oton</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:azaudiohub-atmo"/>
+			<name role="nrol:mnemonic">zAudiohub-Atmo</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:azaudiohub-interview"/>
+			<name role="nrol:mnemonic">zAudiohub-Interview</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-02-16T12:00:00+02:00" qcode="dpasrv:azaudiohub-umfrage"/>
+			<name role="nrol:mnemonic">zAudiohub-Umfrage</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2021-05-05T12:00:00+02:00" qcode="dpasrv:aevent"/>
+			<name role="nrol:mnemonic">aevent</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2023-12-15T12:00:00+02:00" qcode="dpasrv:audio-aht"/>
+			<name role="nrol:mnemonic">audio-aht</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-06-15T02:00:00+02:00" qcode="dpasrv:audio-hes"/>
+			<name role="nrol:mnemonic">audio-hes</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2023-12-15T12:00:00+02:00" qcode="dpasrv:audio-hsh"/>
+			<name role="nrol:mnemonic">audio-hsh</name>
+			<related qcode="ninat:audio"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-02-01T14:00:00+02:00" qcode="dpasrv:video"/>
+			<name role="nrol:mnemonic">dpavideo</name>
+			<related qcode="ninat:video"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-30T14:00:00+02:00" qcode="dpasrv:weblines"/>
+			<name role="nrol:full">weblines</name>
+			<name role="nrol:short nrol:display">Weblines</name>
+			<name role="nrol:mnemonic">weblines</name>
+			<name role="dpanrol:gui">web</name>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:graphic"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:dpa-portal"/>
+			<name role="nrol:full">dpa-portal</name>
+			<name role="nrol:short nrol:display">dpa-portal</name>
+			<name role="nrol:mnemonic">dpa-portal</name>
+			<definition>Oberprodukt aller Produkte, die auf dem Onlineportal der dpa dargestellt werden sollen</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="ninat:audio"/>
+			<related qcode="ninat:video"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:infoline"/>
+			<name role="nrol:display nrol:short">InfoLine</name>
+			<name role="nrol:full">dpa-infocom InfoLine</name>
+			<name role="nrol:mnemonic">infoline</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:infoline_rs"/>
+			<name role="nrol:display nrol:short">InfoLine_rs</name>
+			<name role="nrol:mnemonic">infoline_rs</name>
+			<name role="nrol:full">dpa-infocom InfoLine_rs</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:starline"/>
+			<name role="nrol:full">dpa-infocom StarLine</name>
+			<name role="nrol:mnemonic">starline</name>
+			<name role="nrol:short nrol:display">StarLine</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:sportsline"/>
+			<name role="nrol:mnemonic">sportsline</name>
+			<name role="nrol:short nrol:display">SportsLine</name>
+			<name role="nrol:full">dpa-infocom SportsLine</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:juniorline"/>
+			<name role="nrol:mnemonic">juniorline</name>
+			<name role="nrol:full">dpa-infocom JuniorLine</name>
+			<name role="nrol:short nrol:display">JuniorLine</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:newsscreen"/>
+			<name role="nrol:full">dpa-infocom NewsScreen</name>
+			<name role="nrol:mnemonic">newsscreen</name>
+			<name role="nrol:display nrol:short">NewsScreen</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:myline_porsche"/>
+			<name role="nrol:full">dpa-infocom myline_porsche</name>
+			<name role="nrol:mnemonic">myline_porsche</name>
+			<name role="nrol:display nrol:short">myline_porsche</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:regiolinebayern"/>
+			<name role="nrol:full">dpa-infocom RegioLine Bayern</name>
+			<name role="nrol:mnemonic">bayern</name>
+			<name role="nrol:display nrol:short">Bayern</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-04-26T14:00:00+02:00" qcode="dpasrv:regiolinegeo"/>
+			<name role="nrol:full">dpa-infocom RegioLineGeo</name>
+			<name role="nrol:mnemonic">regiolinegeo</name>
+			<name role="nrol:display nrol:short">RegioLineGeo</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-06-07T14:00:00+02:00" qcode="dpasrv:serviceline"/>
+			<name role="nrol:full">dpa-infocom ServiceLine</name>
+			<name role="nrol:mnemonic">serviceline</name>
+			<name role="nrol:display nrol:short">ServiceLine</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvafx">
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:afx"/>
+			<name role="nrol:mnemonic">afx</name>
+			<name role="nrol:display nrol:short">AFX</name>
+			<name role="nrol:full">dpa-AFX</name>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:afxline"/>
+			<name role="nrol:full">dpa-infocom dpa-AFXLine</name>
+			<name role="nrol:short nrol:display">AFXLine</name>
+			<name role="nrol:mnemonic">afxline</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:avis"/>
+			<name role="nrol:mnemonic">avis</name>
+			<name role="nrol:short nrol:display">Avis</name>
+			<name role="nrol:full">dpa-infocom Avis</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinebwg"/>
+			<name role="nrol:short nrol:display">Badenwuerttemberg</name>
+			<name role="nrol:full">dpa-infocom RegioLine Baden-Wuerttemberg</name>
+			<name role="nrol:mnemonic">badenwuerttemberg</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinebrb"/>
+			<name role="nrol:full">dpa-infocom RegioLine Berlin/Brandenburg</name>
+			<name role="nrol:mnemonic">berlinbrandenburg</name>
+			<name role="nrol:display nrol:short">BerlinBrandenburg</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinehsh"/>
+			<name role="nrol:mnemonic">hamburgschleswigholstein</name>
+			<name role="nrol:full">dpa-infocom RegioLine Hamburg/Schleswig-Holstein</name>
+			<name role="nrol:display nrol:short">HamburgSchleswigHolstein</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinehes"/>
+			<name role="nrol:mnemonic">hessen</name>
+			<name role="nrol:full">dpa-infocom RegioLine Hessen</name>
+			<name role="nrol:short nrol:display">Hessen</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinembv"/>
+			<name role="nrol:short nrol:display">MecklenburgVorpommern</name>
+			<name role="nrol:full">dpa-infocom RegioLine Mecklenburg-Vorpommern</name>
+			<name role="nrol:mnemonic">mecklenburgvorpommern</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinensb"/>
+			<name role="nrol:full">dpa-infocom RegioLine Niedersachsen</name>
+			<name role="nrol:mnemonic">niedersachsen</name>
+			<name role="nrol:short nrol:display">Niedersachsen</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinenwf"/>
+			<name role="nrol:full">dpa-infocom RegioLine Nordrhein-Westfalen</name>
+			<name role="nrol:mnemonic">nordrheinwestfalen</name>
+			<name role="nrol:display nrol:short">NordrheinWestfalen</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinerhs"/>
+			<name role="nrol:full">dpa-infocom RegioLine Rheinland-Pfalz/Saarland</name>
+			<name role="nrol:mnemonic">rheinlandpfalzsaarland</name>
+			<name role="nrol:display nrol:short">RheinlandpfalzSaarland</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinesan"/>
+			<name role="nrol:full">dpa-infocom RegioLine Sachsen</name>
+			<name role="nrol:short nrol:display">Sachsen</name>
+			<name role="nrol:mnemonic">sachsen</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolineaht"/>
+			<name role="nrol:short nrol:display">Sachsenanhalt</name>
+			<name role="nrol:full">dpa-infocom RegioLine Sachsen-Anhalt</name>
+			<name role="nrol:mnemonic">sachsenanhalt</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:regiolinethg"/>
+			<name role="nrol:mnemonic">thueringen</name>
+			<name role="nrol:full">dpa-infocom RegioLine Thueringen</name>
+			<name role="nrol:display nrol:short">Thueringen</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:handelsblatt"/>
+			<name role="nrol:display nrol:short">Handelsblatt</name>
+			<name role="nrol:mnemonic">handelsblatt</name>
+			<name role="nrol:full">dpa-infocom Handelsblatt</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:t_online_myline"/>
+			<name role="nrol:display nrol:short">T_online_myline</name>
+			<name role="nrol:mnemonic">t_online_myline</name>
+			<name role="nrol:full">dpa-infocom T_online_myline</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:hitradio"/>
+			<name role="nrol:full">dpa-infocom HitRadio</name>
+			<name role="nrol:mnemonic">hitradio</name>
+			<name role="nrol:short nrol:display">HitRadio</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+		</concept>
+		<concept>
+			<conceptId created="2012-07-26T13:00:00+02:00" qcode="dpasrv:ntv"/>
+			<name role="nrol:full">dpa-infocom ntv</name>
+			<name role="nrol:display nrol:short">Ntv</name>
+			<name role="nrol:mnemonic">ntv</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-20T10:11:00+02:00" qcode="dpasrv:ots_line"/>
+			<name role="nrol:mnemonic">ots_line</name>
+			<name role="nrol:full">dpa-infocom ots_line</name>
+			<name role="nrol:short nrol:display">ots_line</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvbid">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bid"/>
+			<name role="nrol:mnemonic">bid</name>
+			<name role="nrol:full">Basisdienst Inland</name>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvhfk">
+			<conceptId qcode="dpasrv:hfk"/>
+			<name role="nrol:full">Kurznachrichtendienst</name>
+			<name role="nrol:mnemonic">hfk</name>
+			<broader qcode="dpaagenturzeichen:dpa-kurz"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:hsd"/>
+			<name role="nrol:mnemonic">hsd</name>
+			<name role="nrol:full">Hauptstadtdienst</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:fsh"/>
+			<name role="nrol:mnemonic">fsh</name>
+			<name role="nrol:full">Flashdienst</name>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvkom">
+			<conceptId qcode="dpasrv:kom"/>
+			<name role="nrol:full">Vorschau Audiodienst</name>
+			<name role="nrol:mnemonic">kom</name>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:mag"/>
+			<name role="nrol:full">dpa Themendienst Magazin</name>
+			<name role="nrol:mnemonic">mag</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpaagenturzeichen:azin"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:tmn"/>
+			<name role="nrol:full">dpa Themendienst</name>
+			<name role="nrol:mnemonic">tmn</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpaagenturzeichen:dpa-tmn"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-09-11T13:00:00+01:00" qcode="dpasrv:eve"/>
+			<name role="nrol:full">dpa Evergreen Dienst</name>
+			<name role="nrol:mnemonic">eve</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:tad"/>
+			<name role="nrol:full">dpa Tabellendienst</name>
+			<name role="nrol:mnemonic">tad</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:biog"/>
+			<name role="nrol:full">Leichenspeicher</name>
+			<name role="nrol:mnemonic">biog</name>
+			<broader qcode="dpaagenturzeichen:dpa-biog"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2013-12-11T12:25:00+01:00" qcode="dpasrv:teletext"/>
+			<name role="nrol:mnemonic">teletext</name>
+			<name role="nrol:short">Teletext</name>
+			<name role="nrol:full">dpa-infocom Teletext</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvmbv">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:mbv"/>
+			<name role="nrol:full">Landesdienst Mecklenburg-Vorpommern</name>
+			<name role="nrol:mnemonic">mbv</name>
+			<broader qcode="dpaagenturzeichen:lmv"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvbwg">
+			<conceptId qcode="dpasrv:bwg"/>
+			<name role="nrol:mnemonic">bwg</name>
+			<name role="nrol:full">Landesdienst Baden-Württemberg</name>
+			<broader qcode="dpaagenturzeichen:lsw"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvhes">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:hes"/>
+			<name role="nrol:mnemonic">hes</name>
+			<name role="nrol:full">Landesdienst Hessen</name>
+			<broader qcode="dpaagenturzeichen:lhe"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvbay">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:bay"/>
+			<name role="nrol:mnemonic">bay</name>
+			<name role="nrol:full">Landesdienst Bayern</name>
+			<broader qcode="dpaagenturzeichen:lby"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvbrb">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:brb"/>
+			<name role="nrol:full">Landesdienst Berlin/Brandenburg</name>
+			<name role="nrol:mnemonic">brb</name>
+			<broader qcode="dpaagenturzeichen:lbn"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvnsb">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:nsb"/>
+			<name role="nrol:mnemonic">nsb</name>
+			<name role="nrol:full">Landesdienst Niedersachsen/Bremen</name>
+			<broader qcode="dpaagenturzeichen:lni"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvnwf">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:nwf"/>
+			<name role="nrol:full">Landesdienst Nordrhein-Westfalen</name>
+			<name role="nrol:mnemonic">nwf</name>
+			<broader qcode="dpaagenturzeichen:lnw"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvhsh">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:hsh"/>
+			<name role="nrol:full">Landesdienst Hamburg/Schleswig-Holstein</name>
+			<name role="nrol:mnemonic">hsh</name>
+			<broader qcode="dpaagenturzeichen:lno"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvrhs">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:rhs"/>
+			<name role="nrol:full">Landesdienst Rheinland-Pfalz/Saarland</name>
+			<name role="nrol:mnemonic">rhs</name>
+			<broader qcode="dpaagenturzeichen:lrs"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvsan">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:san"/>
+			<name role="nrol:mnemonic">san</name>
+			<name role="nrol:full">Landesdienst Sachsen</name>
+			<broader qcode="dpaagenturzeichen:lsn"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvaht">
+			<conceptId qcode="dpasrv:aht"/>
+			<name role="nrol:full">Landesdienst Sachsen-Anhalt</name>
+			<name role="nrol:mnemonic">aht</name>
+			<broader qcode="dpaagenturzeichen:lah"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvthg">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:thg"/>
+			<name role="nrol:full">Landesdienst Thüringen</name>
+			<name role="nrol:mnemonic">thg</name>
+			<broader qcode="dpaagenturzeichen:lth"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-aht">
+			<conceptId qcode="dpasrv:wap-aht"/>
+			<name role="nrol:full">RegioLine Sachsen-Anhalt</name>
+			<name role="nrol:mnemonic">wap</name>
+			<broader qcode="dpaagenturzeichen:lah"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-san">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-san"/>
+			<name role="nrol:mnemonic">wap</name>
+			<name role="nrol:full">RegioLine Sachsen</name>
+			<broader qcode="dpaagenturzeichen:lsn"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-rhs">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-rhs"/>
+			<name role="nrol:full">RegioLine Rheinland-Pfalz/Saarland</name>
+			<name role="nrol:mnemonic">wap</name>
+			<broader qcode="dpaagenturzeichen:lrs"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-hsh">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-hsh"/>
+			<name role="nrol:full">RegioLine Hamburg / Schleswig-Holstein</name>
+			<name role="nrol:mnemonic">wap</name>
+			<broader qcode="dpaagenturzeichen:lno"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-nsb">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-nsb"/>
+			<name role="nrol:mnemonic">wap</name>
+			<name role="nrol:full">RegioLine Niedersachsen/Bremen</name>
+			<broader qcode="dpaagenturzeichen:lni"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-hes">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-hes"/>
+			<name role="nrol:mnemonic">wap</name>
+			<name role="nrol:full">RegioLine Hessen</name>
+			<broader qcode="dpaagenturzeichen:lhe"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-brb">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-brb"/>
+			<name role="nrol:full">RegioLine Berlin/Brandenburg</name>
+			<name role="nrol:mnemonic">wap</name>
+			<broader qcode="dpaagenturzeichen:lbn"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-mbv">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-mbv"/>
+			<name role="nrol:full">RegioLine Mecklenburg-Vorpommern</name>
+			<name role="nrol:mnemonic">wap</name>
+			<broader qcode="dpaagenturzeichen:lmv"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-thg">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-thg"/>
+			<name role="nrol:full">RegioLine Thüringen</name>
+			<name role="nrol:mnemonic">wap</name>
+			<broader qcode="dpaagenturzeichen:lth"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-bwg">
+			<conceptId qcode="dpasrv:wap-bwg"/>
+			<name role="nrol:mnemonic">wap</name>
+			<name role="nrol:full">RegioLine Baden-Württemberg</name>
+			<broader qcode="dpaagenturzeichen:lsw"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-nwf">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-nwf"/>
+			<name role="nrol:full">RegioLine Nordrhein-Westfalen</name>
+			<name role="nrol:mnemonic">wap</name>
+			<broader qcode="dpaagenturzeichen:lnw"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvwap-bay">
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:wap-bay"/>
+			<name role="nrol:mnemonic">wap</name>
+			<name role="nrol:full">RegioLine Bayern</name>
+			<broader qcode="dpaagenturzeichen:lby"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:edi"/>
+			<name role="nrol:mnemonic">edi</name>
+			<name role="nrol:full">Europadienst auf AFP ECS uplink</name>
+			<broader qcode="dpaagenturzeichen:dpa-euro-term"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:edt"/>
+			<name role="nrol:mnemonic">edt</name>
+			<name role="nrol:full">Europadienst für AFP</name>
+			<name role="nrol:display" xml:lang="de">dpa-Europadienst</name>
+			<broader qcode="dpaagenturzeichen:dpa-euro-term"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature"/>
+			<name role="nrol:full">dpa Featuredienste</name>
+			<name role="nrol:mnemonic">feature</name>
+			<definition>Feature Dienste im Allgemeinen. Umfasst Text und Bild</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-06-30T13:00:00+02:00" qcode="dpasrv:feature-de"/>
+			<name role="nrol:full">Featuredienst Deutsch</name>
+			<name role="nrol:mnemonic">feature-de</name>
+			<definition>dpa Feature Dienst in deutscher Sprache</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-ar"/>
+			<name role="nrol:full">Featuredienst Arabisch</name>
+			<name role="nrol:mnemonic">feature-ar</name>
+			<name role="nrol:display" xml:lang="en">dpa features</name>
+			<definition>dpa Feature Dienst in arabischer Sprache</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-en"/>
+			<name role="nrol:full">Featuredienst Englisch</name>
+			<name role="nrol:display" xml:lang="en">dpa features</name>
+			<name role="nrol:mnemonic">feature-en</name>
+			<definition>dpa Feature Dienst in englischer Sprache</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-04-06T09:20:00+02:00" retired="2018-01-18T00:00:00+01:00" qcode="dpasrv:feat-en"/>
+			<name role="nrol:full">Featuredienst Englisch</name>
+			<name role="nrol:display" xml:lang="en">dpa features</name>
+			<name role="nrol:mnemonic">feature-en</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-04-06T09:20:00+02:00" retired="2018-01-18T00:00:00+01:00" qcode="dpasrv:feature-avis-de"/>
+			<name role="nrol:full">Featuredienst Avis</name>
+			<name role="nrol:display" xml:lang="de">dpa features avis</name>
+			<name role="nrol:mnemonic">feature-avis-de</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-euro"/>
+			<name role="nrol:full">dpa Football Euro</name>
+			<name role="nrol:mnemonic">feature-euro</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-euro-en"/>
+			<name role="nrol:full">dpa Football Euro</name>
+			<name role="nrol:mnemonic">feature-euro-en</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature-euro"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-euro-ar"/>
+			<name role="nrol:full">dpa Football Euro</name>
+			<name role="nrol:mnemonic">feature-euro-ar</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature-euro"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-euro-en-photo"/>
+			<name role="nrol:full">dpa Football Euro Photo</name>
+			<name role="nrol:mnemonic">feature-euro-en-photo</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature-euro"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-euro-ar-photo"/>
+			<name role="nrol:full">dpa Football Euro Photo</name>
+			<name role="nrol:mnemonic">feature-euro-ar-photo</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature-euro"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-prisma"/>
+			<name role="nrol:full">dpa prisma</name>
+			<name role="nrol:mnemonic">feature-prisma</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-prisma-es"/>
+			<name role="nrol:full">dpa prisma</name>
+			<name role="nrol:mnemonic">feature-prisma-es</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature-prisma"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-prisma-es-photo"/>
+			<name role="nrol:full">dpa prisma</name>
+			<name role="nrol:mnemonic">feature-prisma-es-photo</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature-prisma"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:feature-prisma-es-mm"/>
+			<name role="nrol:mnemonic">feature-prisma-es-mm</name>
+			<name role="nrol:full">dpa prisma multimedial</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-es"/>
+			<name role="nrol:full">Featuredienst Spanisch</name>
+			<name role="nrol:mnemonic">feature-es</name>
+			<name role="nrol:display" xml:lang="es">dpa reportajes</name>
+			<definition>dpa Feature Dienst in spanischer Sprache</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2016-04-08T13:00:00+01:00" qcode="dpasrv:feature-sports-ar"/>
+			<name role="nrol:full">Featuredienst Sportpakete Arabisch</name>
+			<name role="nrol:mnemonic">feature-sports-ar</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:feature-qatar-ar"/>
+			<name role="nrol:full">dpa Qatar 2022</name>
+			<name role="nrol:mnemonic">feature-qatar-ar</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trendsfeature"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-child-ar"/>
+			<name role="nrol:full">Featuredienst Kinder Arabisch</name>
+			<name role="nrol:mnemonic">feature-child-ar</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-child-es"/>
+			<name role="nrol:full">Featuredienst Kinder Spanisch</name>
+			<name role="nrol:mnemonic">feature-child-es</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-consumer-ar"/>
+			<name role="nrol:full">Featuredienst Verbraucher Arabisch</name>
+			<name role="nrol:mnemonic">feature-consumer-ar</name>
+			<name role="nrol:display" xml:lang="en">dpa consumer news</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-special-es-auto"/>
+			<name role="nrol:full">Featurespezial Automation Spanisch</name>
+			<name role="nrol:mnemonic">feature-special-es-auto</name>
+			<name role="nrol:display" xml:lang="es">dpa servicio al consumidor: autos</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-special-es-pets"/>
+			<name role="nrol:full">Featurespezial Haustiere Spanisch</name>
+			<name role="nrol:mnemonic">feature-special-es-pets</name>
+			<name role="nrol:display" xml:lang="es">dpa servicio al consumidor: pets</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-special-es-tourism"/>
+			<name role="nrol:full">Featurespezial Tourismus Spanisch</name>
+			<name role="nrol:mnemonic">feature-special-es-tourism</name>
+			<name role="nrol:display" xml:lang="es">dpa servicio al consumidor: turismo</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-special-es-trend"/>
+			<name role="nrol:full">Featurespezial Trends Spanisch</name>
+			<name role="nrol:mnemonic">feature-special-es-trend</name>
+			<name role="nrol:display" xml:lang="es">dpa servicio al consumidor: tendencias</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2010-02-11T13:00:00+01:00" qcode="dpasrv:feature-special-es-tech"/>
+			<name role="nrol:full">Featurespezial Technik Spanisch</name>
+			<name role="nrol:mnemonic">feature-special-es-tech</name>
+			<name role="nrol:display" xml:lang="es">dpa servicio al consumidor: tecnología</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-01-11T13:00:00+01:00" qcode="dpasrv:feature-special-en-cars"/>
+			<name role="nrol:full">Featurespezial Cars Englisch</name>
+			<name role="nrol:mnemonic">feature-special-en-cars</name>
+			<name role="nrol:display" xml:lang="en">dpa feature special cars</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-01-11T13:00:00+01:00" qcode="dpasrv:feature-special-en-digital"/>
+			<name role="nrol:full">Featurespezial Digital Englisch</name>
+			<name role="nrol:mnemonic">feature-special-en-digital</name>
+			<name role="nrol:display" xml:lang="en">dpa feature special digital</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-01-11T13:00:00+01:00" qcode="dpasrv:feature-special-en-lifestyle"/>
+			<name role="nrol:full">Featurespezial Digital Englisch</name>
+			<name role="nrol:mnemonic">feature-special-en-lifestyle</name>
+			<name role="nrol:display" xml:lang="en">dpa feature special lifestyle</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-01-11T13:00:00+01:00" qcode="dpasrv:feature-special-en-science"/>
+			<name role="nrol:full">Featurespezial Digital Englisch</name>
+			<name role="nrol:mnemonic">feature-special-en-science</name>
+			<name role="nrol:display" xml:lang="en">dpa feature special science</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-01-11T13:00:00+01:00" qcode="dpasrv:feature-special-en-travel"/>
+			<name role="nrol:full">Featurespezial Digital Englisch</name>
+			<name role="nrol:mnemonic">feature-special-en-travel</name>
+			<name role="nrol:display" xml:lang="en">dpa feature special travel</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-01-11T13:00:00+01:00" qcode="dpasrv:feature-special-en-topstories"/>
+			<name role="nrol:full">Featurespezial Digital Englisch</name>
+			<name role="nrol:mnemonic">feature-special-en-topstories</name>
+			<name role="nrol:display" xml:lang="en">dpa feature special topstories</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvapx">
+			<conceptId created="2013-09-30T14:00:00+02:00" qcode="dpasrv:apx"/>
+			<name role="nrol:full">AP Weltnachrichten</name>
+			<name role="nrol:mnemonic">apx</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpaagenturzeichen:ap"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvdpa-News-Exklusiv">
+			<conceptId qcode="dpasrv:dpa-News-Exklusiv"/>
+			<name role="nrol:full">dpa-News-Exklusiv</name>
+			<name role="nrol:mnemonic">dpa-News-Exklusiv</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+		</concept>
+		<concept id="dpasrvinsight-eu">
+			<conceptId created="2014-01-15T00:00:00+01:00" qcode="dpasrv:insight-eu"/>
+			<name role="nrol:full">dpa-insight-eu</name>
+			<name role="nrol:mnemonic">ieu</name>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2014-01-15T00:00:00+01:00" qcode="dpasrv:insight-eu-de"/>
+			<name role="nrol:full">dpa-insight-eu-de</name>
+			<name role="nrol:mnemonic">ieu</name>
+			<sameAs qcode="dpasrv:insight-eu"/>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept id="dpasrvspecials-en">
+			<conceptId created="2016-06-03T09:49:00+01:00" qcode="dpasrv:specials-en"/>
+			<name role="nrol:full">dpa Specials</name>
+			<name role="nrol:mnemonic">specials-en</name>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvinsight-sports-es">
+			<conceptId created="2016-02-03T09:49:00+01:00" qcode="dpasrv:insight-sports-es"/>
+			<name role="nrol:full">dpa Insight Sports</name>
+			<name role="nrol:mnemonic">insight-sports-es</name>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2014-09-11T00:00:00+02:00" qcode="dpasrv:dpa-insight-eu"/>
+			<name role="nrol:full">insight-eu</name>
+			<name role="nrol:mnemonic">dpa-insight-eu</name>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="ninat:composite"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvinsight-eu-en">
+			<conceptId created="2014-01-15T00:00:00+01:00" qcode="dpasrv:insight-eu-en"/>
+			<name role="nrol:full">dpa-insight-eu-en</name>
+			<name role="nrol:mnemonic">ien</name>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2014-09-11T00:00:00+02:00" qcode="dpasrv:dpa-insight-eu-en"/>
+			<name role="nrol:full">insight-eu-en</name>
+			<name role="nrol:mnemonic">dpa-insight-eu-en</name>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="ninat:composite"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:vertrieb"/>
+			<name role="nrol:full">dpa-vertrieb</name>
+			<name role="nrol:mnemonic">vertrieb</name>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:dpa-vertrieb"/>
+			<name role="nrol:full">vertrieb</name>
+			<name role="nrol:mnemonic">dpa-vertrieb</name>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="ninat:composite"/>
+		</concept>
+		<concept>
+			<conceptId qcode="dpasrv:spezial"/>
+			<name role="nrol:full">Spezial</name>
+			<name role="nrol:short nrol:display">Spezial</name>
+			<name role="nrol:mnemonic">spezial</name>
+			<broader qcode="dpasrv:dpa-portal"/>
+		</concept>
+		<concept id="dpasrvfeature-special-es-sport">
+			<conceptId created="2014-02-03T09:49:00+01:00" qcode="dpasrv:feature-special-es-sport"/>
+			<name role="nrol:full">Feature Spezialpaket Sport Spanisch</name>
+			<name role="nrol:mnemonic">feature-special-es-sport</name>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvfeature-special-en-sport">
+			<conceptId created="2014-02-03T09:56:00+01:00" qcode="dpasrv:feature-special-en-sport"/>
+			<name role="nrol:mnemonic">feature-special-en-sport</name>
+			<name role="nrol:full">Feature Spezialpaket Sport Englisch</name>
+			<broader qcode="dpasrv:feature"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2014-03-31T13:00:00+02:00" qcode="dpasrv:GJA"/>
+			<name role="nrol:full">Gruner + Jahr Auswahl</name>
+			<name role="nrol:mnemonic">GJA</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2014-01-15T00:00:00+01:00" qcode="dpasrv:dpa-news"/>
+			<name role="nrol:full">dpa-News</name>
+			<name role="nrol:mnemonic">news</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2014-01-15T00:00:00+01:00" qcode="dpasrv:dpa-agenda"/>
+			<name role="nrol:full">dpa-Agenda</name>
+			<name role="nrol:mnemonic">agenda</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvdpa-feedback">
+			<conceptId created="2014-04-10T15:24:00+02:00" qcode="dpasrv:dpa-feedback"/>
+			<name role="nrol:mnemonic">feedback</name>
+			<name role="nrol:full">dpa-Feedback</name>
+			<name role="nrol:display">dpa-Feedback</name>
+			<broader qcode="dpaagenturzeichen:intern"/>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2015-09-08T15:14:00+02:00">
+			<conceptId qcode="dpasrv:newslab-de"/>
+			<name role="nrol:mnemonic">newslab-de</name>
+			<name role="nrol:full">newslab-de</name>
+			<name role="nrol:display">newslab-de</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvdossier-wis">
+			<conceptId created="2014-05-20T16:05:00+02:00" qcode="dpasrv:dossier-wis"/>
+			<name role="nrol:mnemonic">dossier-wis</name>
+			<name role="nrol:full">Dossiers Wissenschaft</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-09-07T11:05:00+02:00" qcode="dpasrv:cc-xinhua"/>
+			<name role="nrol:mnemonic">cc-xinhua</name>
+			<name role="nrol:full">cc-xinhua</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-09-06T16:05:00+02:00" qcode="dpasrv:germany-today"/>
+			<name role="nrol:mnemonic">germany-today</name>
+			<name role="nrol:full">Germany-Today</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvgermany-today-de">
+			<conceptId created="2014-05-20T16:05:00+02:00" qcode="dpasrv:germany-today-de"/>
+			<name role="nrol:mnemonic">germany-today-de</name>
+			<name role="nrol:full">Germany-Today Deutsch</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept id="dpasrvgermany-today-en">
+			<conceptId created="2014-05-20T16:05:00+02:00" qcode="dpasrv:germany-today-en"/>
+			<name role="nrol:mnemonic">germany-today-en</name>
+			<name role="nrol:full">Germany-Today English</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept id="dpasrvgermany-today-es">
+			<conceptId created="2014-05-20T16:05:00+02:00" qcode="dpasrv:germany-today-es"/>
+			<name role="nrol:mnemonic">germany-today-es</name>
+			<name role="nrol:full">Germany-Today Espanol</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept id="dpasrvgermany-today-ar">
+			<conceptId created="2014-05-20T16:05:00+02:00" qcode="dpasrv:germany-today-ar"/>
+			<name role="nrol:mnemonic">germany-today-ar</name>
+			<name role="nrol:full">Germany-Today Arabisch</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-09-06T16:05:00+02:00" qcode="dpasrv:germany-today-fr"/>
+			<name role="nrol:mnemonic">germany-today-fr</name>
+			<name role="nrol:full">Germany-Today French</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-09-06T16:05:00+02:00" qcode="dpasrv:germany-today-ru"/>
+			<name role="nrol:mnemonic">germany-today-ru</name>
+			<name role="nrol:full">Germany-Today Russian</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-09-06T16:05:00+02:00" qcode="dpasrv:germany-today-pl"/>
+			<name role="nrol:mnemonic">germany-today-pl</name>
+			<name role="nrol:full">Germany-Today Polish</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-09-06T16:05:00+02:00" qcode="dpasrv:germany-today-rs"/>
+			<name role="nrol:mnemonic">germany-today-rs</name>
+			<name role="nrol:full">Germany-Today Serbia</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:germany-today"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept id="dpasrvmorgenlage">
+			<conceptId created="2014-05-20T16:05:00+02:00" qcode="dpasrv:morgenlage"/>
+			<name role="nrol:mnemonic">morgenlage</name>
+			<name role="nrol:full">Morgenlage</name>
+			<definition>ToDo</definition>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:composite"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvradioline">
+			<conceptId created="2014-06-23T11:16:00+02:00" qcode="dpasrv:radioline"/>
+			<name role="nrol:mnemonic">radioline</name>
+			<name role="nrol:display">RadioLine</name>
+			<name role="nrol:full">dpa-infocom RadioLine</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvembassynews">
+			<conceptId created="2014-09-09T11:16:00+02:00" qcode="dpasrv:embassynews"/>
+			<name role="nrol:mnemonic">embassynews</name>
+			<name role="nrol:display">EmbassyNews</name>
+			<name role="nrol:full">dpa-infocom EmbassyNews</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvlabline">
+			<conceptId created="2015-09-07T11:16:00+02:00" qcode="dpasrv:labline"/>
+			<name role="nrol:mnemonic">labline</name>
+			<name role="nrol:display">LabLine</name>
+			<name role="nrol:full">dpa-infocom labline</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept id="dpasrvnextline">
+			<conceptId created="2016-03-07T11:16:00+02:00" qcode="dpasrv:nextline"/>
+			<name role="nrol:mnemonic">nextline</name>
+			<name role="nrol:display">NextLine</name>
+			<name role="nrol:full">dpa-infocom nextline</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2015-05-22T10:17:00+02:00">
+			<conceptId qcode="dpasrv:g7-2015"/>
+			<name role="nrol:mnemonic">g7-2015</name>
+			<name role="nrol:full">g7-2015</name>
+			<name role="nrol:short">g7-2015</name>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept modified="2015-05-22T10:18:00+02:00">
+			<conceptId qcode="dpasrv:g7-2015-en"/>
+			<name role="nrol:mnemonic">g7-2015-en</name>
+			<name role="nrol:full">g7-2015-en</name>
+			<name role="nrol:short">g7-2015-en</name>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2024-04-15T15:27:00+02:00">
+			<conceptId created="2015-01-13T09:02:00+01:00" qcode="dpasrv:text-arabisch-abi"/>
+			<name role="nrol:full">Arabischer Dienst (abi)</name>
+			<name role="nrol:display" xml:lang="en">dpa international</name>
+			<name dir="rtl" role="nrol:mnemonic" xml:lang="ar">صاب</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<broader qcode="dpaagenturzeichen:dpa-text-arabisch-abi"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2015-01-13T09:02:00+01:00">
+			<conceptId created="2015-01-13T09:02:00+01:00" qcode="dpasrv:text-arabisch-acc"/>
+			<name role="nrol:full" xml:lang="de">Arabischer Dienst (acc)</name>
+			<name role="nrol:display" xml:lang="en">dpa international</name>
+			<name dir="rtl" role="nrol:mnemonic" xml:lang="ar">صيي</name>
+			<name role="nrol:display" xml:lang="en">dpa international Arabic</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<broader qcode="dpaagenturzeichen:dpa-text-arabisch-acc"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2015-01-13T09:02:00+01:00">
+			<conceptId created="2015-01-13T09:02:00+01:00" qcode="dpasrv:text-arabisch-dara"/>
+			<name role="nrol:full">Arabischer Dienst (dara)</name>
+			<name role="nrol:display" xml:lang="en">dpa international</name>
+			<name dir="rtl" role="nrol:mnemonic" xml:lang="ar">س</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<broader qcode="dpaagenturzeichen:dpa-text-arabisch-dara"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2024-04-15T15:27:00+02:00">
+			<conceptId created="2015-01-13T09:02:00+01:00" qcode="dpasrv:text-arabisch-are"/>
+			<name role="nrol:full">Arabischer Dienst (are)</name>
+			<name role="nrol:display" xml:lang="en">dpa international</name>
+			<name dir="rtl" role="nrol:mnemonic" xml:lang="ar">صدط</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<broader qcode="dpaagenturzeichen:dpa-text-arabisch-are"/>
+			<related qcode="dpachannel:mecom"/>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2016-10-11T09:02:00+02:00" qcode="dpasrv:text-arabic"/>
+			<name role="nrol:full">Arabischer Dienst (G2)</name>
+			<name role="nrol:display" xml:lang="en">dpa international</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:02:00+01:00" qcode="dpasrv:arabic-mm"/>
+			<name role="nrol:full">Arabischer Dienst  multi medial</name>
+			<name role="nrol:display" xml:lang="en">dpa international arabic multi media</name>
+			<note xml:lang="en">This service contains text message in Arabic language with links to media items</note>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2015-08-11T13:00:00+02:00" qcode="dpasrv:kon"/>
+			<name role="nrol:mnemonic">kon</name>
+			<name role="nrol:full">Kontrollmeldung</name>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+		</concept>
+		<concept>
+			<conceptId created="2015-08-11T13:00:00+02:00" qcode="dpasrv:ctn"/>
+			<name role="nrol:mnemonic">ctn</name>
+			<name role="nrol:full">Control Messsage</name>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+		</concept>
+		<concept modified="2015-11-12T10:45:00+01:00">
+			<conceptId created="2015-11-12T10:44:00+01:00" qcode="dpasrv:rtl2_myline"/>
+			<name role="nrol:short">rtl2_myline</name>
+			<name role="nrol:full">dpa-infocom rtl2_myline</name>
+			<name role="nrol:mnemonic">rtl2_myline</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2016-01-19T10:45:00+01:00">
+			<conceptId created="2016-01-19T10:44:00+01:00" qcode="dpasrv:news_for_kids"/>
+			<name role="nrol:short">news_for_kids</name>
+			<name role="nrol:full">News For Kids</name>
+			<name role="nrol:display">News For Kids</name>
+			<name role="nrol:mnemonic">news_for_kids</name>
+			<name role="nrol:display" xml:lang="en">dpa news for kids</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2016-08-19T10:45:00+01:00">
+			<conceptId created="2016-08-19T10:44:00+01:00" qcode="dpasrv:deutschlandjahr"/>
+			<name role="nrol:short">deutschlandjahr</name>
+			<name role="nrol:full">deutschlandjahr</name>
+			<name role="nrol:display">Deutschlandjahr</name>
+			<name role="nrol:mnemonic">deutschlandjahr</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2016-08-19T10:45:00+01:00">
+			<conceptId created="2016-08-19T10:44:00+01:00" qcode="dpasrv:zdf_myline"/>
+			<name role="nrol:short">zdf_myline</name>
+			<name role="nrol:full">zdf_myline</name>
+			<name role="nrol:display">ZDF</name>
+			<name role="nrol:mnemonic">zdf_myline</name>
+			<broader qcode="dpasrv:weblines"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2016-02-18T10:45:00+01:00">
+			<conceptId created="2016-02-18T10:44:00+01:00" qcode="dpasrv:story"/>
+			<name role="nrol:short">story</name>
+			<name role="nrol:full">dpa-Story</name>
+			<name role="nrol:display">dpa-Story</name>
+			<name role="nrol:mnemonic">story</name>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept modified="2016-03-23T10:45:00+01:00">
+			<conceptId created="2016-02-18T10:44:00+01:00" retired="2017-12-12T10:45:00+01:00" qcode="dpasrv:bfotografia"/>
+			<name role="nrol:full">dpa Fotografia</name>
+			<name role="nrol:display" xml:lang="es">dpa fotografía</name>
+			<name role="nrol:mnemonic">fotografia</name>
+			<definition>Spanischer Bilderdienst</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<!-- start of photostream -->
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de"/>
+			<name role="nrol:full">dpa Bilderdienst DE</name>
+			<name role="nrol:display">dpa Bilderdienst DE</name>
+			<name role="nrol:mnemonic">photostream-de</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in deutscher Sprache</definition>
+			<sameAs qcode="dpasrv:bbasis"/>
+			<sameAs qcode="dpax-sapmatnr:69"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Bildfunk +++" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de-nat"/>
+			<name role="nrol:full">dpa Bilderdienst DE-NAT</name>
+			<name role="nrol:display">dpa Bilderdienst DE-NAT</name>
+			<name role="nrol:mnemonic">photostream-de-nat</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in deutscher Sprache mit dpa Bildern aus Deutschland</definition>
+			<sameAs qcode="dpax-sapmatnr:9856"/>
+			<broader qcode="dpasrv:photostream-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de-int"/>
+			<name role="nrol:full">dpa Bilderdienst DE-INT</name>
+			<name role="nrol:display">dpa Bilderdienst DE-INT</name>
+			<name role="nrol:mnemonic">photostream-de-int</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in deutscher Sprache mit internationalen dpa Bildern</definition>
+			<sameAs qcode="dpax-sapmatnr:9858"/>
+			<broader qcode="dpasrv:photostream-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de-zb" retired="2017-07-12T10:45:00+02:00"/>
+			<name role="nrol:full">dpa Bilderdienst DE-ZB</name>
+			<name role="nrol:display">dpa Bilderdienst DE-ZB</name>
+			<name role="nrol:mnemonic">photostream-de-zb</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in deutscher Sprache mit Bildern von ZB</definition>
+			<sameAs qcode="dpax-sapmatnr:9857"/>
+			<related qcode="ninat:picture"/>
+			<broader qcode="dpasrv:photostream-de"/>
+			<related rel="dparel:requires" qcode="dpacprh:zb"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de-3p"/>
+			<name role="nrol:full">dpa Bilderdienst DE-3P</name>
+			<name role="nrol:display">dpa Bilderdienst DE-3P</name>
+			<name role="nrol:mnemonic">photostream-de-3p</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in deutscher Sprache mit in Deutschland handelbaren Bildern von Partnern</definition>
+			<broader qcode="dpasrv:photostream-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de-3p-international" retired="2017-12-01T10:45:00+01:00"/>
+			<name role="nrol:full">dpa Bilderdienst DE-3P International</name>
+			<name role="nrol:display">dpa Bilderdienst DE-3P Intl.</name>
+			<name role="nrol:mnemonic">photostream-de-3p-international</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in deutscher Sprache mit international handelbaren Bildern von Partnern</definition>
+			<broader qcode="dpasrv:photostream-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de-sel"/>
+			<name role="nrol:full">dpa Bilderdienst DE-SEL</name>
+			<name role="nrol:display">dpa Bilderdienst DE-SEL</name>
+			<name role="nrol:mnemonic">photostream-de-sel</name>
+			<definition xml:lang="de">Selektion der wichtigsten Bilder des nachrichtenaktuellen Bilderdienstes der dpa in deutscher Sprache ausgezeichmet mit 4 Sternen</definition>
+			<broader qcode="dpasrv:photostream-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-de-top"/>
+			<name role="nrol:full">dpa Bilderdienst DE-TOP</name>
+			<name role="nrol:display">dpa Bilderdienst DE-TOP</name>
+			<name role="nrol:mnemonic">photostream-de-top</name>
+			<definition xml:lang="de">dpatopbilder des nachrichtenaktuellen Bilderdienstes der dpa in deutscher Sprache ausgezeichnet mit 5 Sternen</definition>
+			<broader qcode="dpasrv:photostream-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-plus"/>
+			<name role="nrol:full">dpa Bilderdienst Plus</name>
+			<name role="nrol:display">dpa Bilderdienst Plus</name>
+			<name role="nrol:mnemonic">photostream-plus</name>
+			<definition xml:lang="de">Erweiterungen zum nachrichtenaktuellen Bilderdienst der dpa in deutscher Sprache.</definition>
+			<note>Dieses Produkt wird automatisch aus angeliefertem 3P Material produziert.</note>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+			<related rel="dparel:requires" qcode="dpasrv:photostream-plus"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-12-12T10:45:00+01:00" qcode="dpasrv:photostream-en-regio-arab"/>
+			<name role="nrol:full">dpa Bilderdienst Regio Arab EN</name>
+			<name role="nrol:display">dpa Bilderdienst Regio Arab EN</name>
+			<name role="nrol:mnemonic">photostream-en-regio-arab</name>
+			<definition xml:lang="de">Das regionale Bildangebot von dpa für den arabischen Raum in englischer Sprache</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-12-12T10:45:00+01:00" qcode="dpasrv:photostream-en-regio-asia"/>
+			<name role="nrol:full">dpa Bilderdienst Regio Asia EN</name>
+			<name role="nrol:display">dpa Bilderdienst Regio Asia EN</name>
+			<name role="nrol:mnemonic">photostream-en-regio-asia</name>
+			<definition xml:lang="de">Das regionale Bildangebot von dpa für den asiatischen Raum in englischer Sprache</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-12-13T10:45:00+01:00" qcode="dpasrv:photostream-en-sports"/>
+			<name role="nrol:full">dpa Bilderdienst Sportmodul EN</name>
+			<name role="nrol:display">dpa Bilderdienst Sportmodul EN</name>
+			<name role="nrol:mnemonic">photostream-en-sports</name>
+			<sameAs qcode="dpax-sapmatnr:9690"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-zb"/>
+			<name role="nrol:full">ZB Bilderdienst</name>
+			<name role="nrol:display">ZB Bilderdienst</name>
+			<name role="nrol:mnemonic">photostream-zb</name>
+			<definition xml:lang="de">Das regionale Bildangebot von dpa-Zentralbild für den Raum der ostdeutschen Bundesländer in deutscher Sprache.</definition>
+			<sameAs qcode="dpasrv:bzbreg"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpazb"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ ZB-FUNKREGIO OST +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes ZB-Funkregio Ost" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-en"/>
+			<name role="nrol:full">dpa Bilderdienst EN</name>
+			<name role="nrol:display">dpa Bilderdienst EN</name>
+			<name role="nrol:mnemonic">photostream-en</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in englischer Sprache</definition>
+			<sameAs qcode="dpasrv:bdpai"/>
+			<sameAs qcode="dpax-sapmatnr:1855"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-en-nat"/>
+			<name role="nrol:full">dpa Bilderdienst EN-NAT</name>
+			<name role="nrol:display">dpa Bilderdienst EN-NAT</name>
+			<name role="nrol:mnemonic">photostream-en-nat</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in englischer Sprache mit dpa Bildern aus Deutschland</definition>
+			<sameAs qcode="dpax-sapmatnr:9853"/>
+			<broader qcode="dpasrv:photostream-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-en-int"/>
+			<name role="nrol:full">dpa Bilderdienst EN-INT</name>
+			<name role="nrol:display">dpa Bilderdienst EN-INT</name>
+			<name role="nrol:mnemonic">photostream-en-int</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in englischer Sprache mit internationalen dpa Bildern</definition>
+			<sameAs qcode="dpax-sapmatnr:9852"/>
+			<broader qcode="dpasrv:photostream-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-en-zb" retired="2017-07-12T10:45:00+02:00"/>
+			<name role="nrol:full">dpa Bilderdienst EN-ZB</name>
+			<name role="nrol:display">dpa Bilderdienst EN-ZB</name>
+			<name role="nrol:mnemonic">photostream-en-zb</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in englischer Sprache mit Bildern von ZB</definition>
+			<sameAs qcode="dpax-sapmatnr:9851"/>
+			<broader qcode="dpasrv:photostream-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:zb"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-en-3p"/>
+			<name role="nrol:full">dpa Bilderdienst EN-3P</name>
+			<name role="nrol:display">dpa Bilderdienst EN-3P</name>
+			<name role="nrol:mnemonic">photostream-en-3p</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in englischer Sprache mit Bildern von Partnern</definition>
+			<broader qcode="dpasrv:photostream-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-en-sel"/>
+			<name role="nrol:full">dpa Bilderdienst EN-SEL</name>
+			<name role="nrol:display">dpa Bilderdienst EN-SEL</name>
+			<name role="nrol:mnemonic">photostream-en-sel</name>
+			<definition xml:lang="de">Selektion der wichtigsten Bilder des nachrichtenaktuellen Bilderdienstes der dpa in englischer Sprache ausgezeichnet mit 4 Sternen mit Bildern der dpa.</definition>
+			<sameAs qcode="dpax-sapmatnr:9850"/>
+			<broader qcode="dpasrv:photostream-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" retired="2017-12-12T10:45:00+01:00" qcode="dpasrv:photostream-en-sel-nat"/>
+			<name role="nrol:full">dpa Bilderdienst EN-SEL-NAT</name>
+			<name role="nrol:display">dpa Bilderdienst EN-SEL-NAT</name>
+			<name role="nrol:mnemonic">photostream-en-sel-nat</name>
+			<definition xml:lang="de">Selektion der wichtigsten Bilder des nachrichtenaktuellen Bilderdienstes der dpa in englischer Sprache ausgezeichnet mit 4 Sternen mit Bildern der dpa aus Deutschland.</definition>
+			<sameAs qcode="dpax-sapmatnr:9854"/>
+			<broader qcode="dpasrv:photostream-en-sel"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-en-top"/>
+			<name role="nrol:full">dpa Bilderdienst EN-TOP</name>
+			<name role="nrol:display">dpa Bilderdienst EN-TOP</name>
+			<name role="nrol:mnemonic">photostream-en-top</name>
+			<definition xml:lang="de">dpatopbilder des nachrichtenaktuellen Bilderdienstes der dpa in englischer Sprache ausgezeichnet mit 5 Sternen mit Bildern der dpa.</definition>
+			<sameAs qcode="dpax-sapmatnr:9849"/>
+			<broader qcode="dpasrv:photostream-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-10-06T10:45:00+01:00" qcode="dpasrv:photostream-en-500"/>
+			<name role="nrol:full">dpa Bilderdienst EN 500</name>
+			<name role="nrol:display">dpa Bilderdienst EN 500</name>
+			<name role="nrol:mnemonic">photostream-en-500</name>
+			<definition xml:lang="de">TODO</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-10-23T10:45:00+01:00" qcode="dpasrv:photostream-en-500-nat"/>
+			<name role="nrol:full">dpa Bilderdienst EN 500-NAT</name>
+			<name role="nrol:display">dpa Bilderdienst EN 500-NAT</name>
+			<name role="nrol:mnemonic">photostream-en-500-nat</name>
+			<definition xml:lang="de">TODO</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-10-23T10:45:00+01:00" qcode="dpasrv:photostream-en-500-int"/>
+			<name role="nrol:full">dpa Bilderdienst EN 500-INT</name>
+			<name role="nrol:display">dpa Bilderdienst EN 500-INT</name>
+			<name role="nrol:mnemonic">photostream-en-500-int</name>
+			<definition xml:lang="de">TODO</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-06-02T10:45:00+01:00" retired="2017-12-12T10:45:00+01:00" qcode="dpasrv:photostream-arab"/>
+			<name role="nrol:full">dpa Bilderdienst für Arabien</name>
+			<name role="nrol:display">dpa Bilderdienst Arab</name>
+			<name role="nrol:mnemonic">photostream-arab</name>
+			<definition xml:lang="de">Das regionale Bildangebot der dpa für den arabischen Raum in englischer Sprache</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:photostream-es"/>
+			<name role="nrol:full">dpa Bilderdienst ES</name>
+			<name role="nrol:display">dpa Bilderdienst ES</name>
+			<name role="nrol:mnemonic">photostream-en</name>
+			<definition xml:lang="de">Der nachrichtenaktuelle Bilderdienst der dpa in spanischer Sprache</definition>
+			<sameAs qcode="dpasrv:bfotografia"/>
+			<sameAs qcode="dpax-sapmatnr:1476"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-fotografia +++" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-de"/>
+			<name role="nrol:full">pa Bildfeed DE</name>
+			<name role="nrol:display">pa Bildfeed DE</name>
+			<name role="nrol:mnemonic">images-de</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in deutscher Sprache</definition>
+			<broader qcode="dpasrv:barch"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-de-nat"/>
+			<name role="nrol:full">pa Bildfeed DE-NAT</name>
+			<name role="nrol:display">pa Bildfeed DE-NAT</name>
+			<name role="nrol:mnemonic">images-de-nat</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in deutscher Sprache mit dpa/pa Bildern aus Deutschland</definition>
+			<broader qcode="dpasrv:images-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-de-int"/>
+			<name role="nrol:full">pa Bildfeed DE-INT</name>
+			<name role="nrol:display">pa Bildfeed DE-INT</name>
+			<name role="nrol:mnemonic">images-de-int</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in deutscher Sprache mit internationalen dpa/pa Bildern</definition>
+			<broader qcode="dpasrv:images-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-de-zb"/>
+			<name role="nrol:full">pa Bildfeed DE-ZB</name>
+			<name role="nrol:display">pa Bildfeed DE-ZB</name>
+			<name role="nrol:mnemonic">images-de-zb</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in deutscher Sprache mit Bildern von ZB</definition>
+			<broader qcode="dpasrv:images-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:zb"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-de-3p"/>
+			<name role="nrol:full">pa Bildfeed DE-3P</name>
+			<name role="nrol:display">pa Bildfeed DE-3P</name>
+			<name role="nrol:mnemonic">images-de-3p</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in deutscher Sprache mit Bildern von Partnern</definition>
+			<broader qcode="dpasrv:images-de"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-en"/>
+			<name role="nrol:full">pa Bildfeed EN</name>
+			<name role="nrol:display">pa Bildfeed EN</name>
+			<name role="nrol:mnemonic">images-en</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in englischer Sprache</definition>
+			<broader qcode="dpasrv:barch"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-en-nat"/>
+			<name role="nrol:full">pa Bildfeed EN-NAT</name>
+			<name role="nrol:display">pa Bildfeed EN-NAT</name>
+			<name role="nrol:mnemonic">images-en-nat</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in englischer Sprache mit dpa/pa Bildern aus Deutschland</definition>
+			<broader qcode="dpasrv:images-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-en-int"/>
+			<name role="nrol:full">pa Bildfeed EN-INT</name>
+			<name role="nrol:display">pa Bildfeed EN-INT</name>
+			<name role="nrol:mnemonic">images-en-int</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in englischer Sprache mit internationalen dpa/pa Bildern</definition>
+			<broader qcode="dpasrv:images-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:dpa"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-en-zb"/>
+			<name role="nrol:full">pa Bildfeed EN-ZB</name>
+			<name role="nrol:display">pa Bildfeed EN-ZB</name>
+			<name role="nrol:mnemonic">images-en-zb</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in englischer Sprache mit Bildern von ZB</definition>
+			<broader qcode="dpasrv:images-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:zb"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:images-en-3p"/>
+			<name role="nrol:full">pa Bildfeed EN-3P</name>
+			<name role="nrol:display">pa Bildfeed EN-3P</name>
+			<name role="nrol:mnemonic">images-en-3p</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in englischer Sprache mit Bildern von Partnern</definition>
+			<broader qcode="dpasrv:images-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+		</concept>
+		<concept>
+			<conceptId created="2018-04-21T10:45:00+02:00" qcode="dpasrv:images-en-cf"/>
+			<name role="nrol:full">pa Bildfeed EN-CF</name>
+			<name role="nrol:display">pa Bildfeed EN-CF</name>
+			<name role="nrol:mnemonic">images-en-cf</name>
+			<definition xml:lang="de">Das Bildangebot der dpa/picture-alliance in englischer Sprache mit dpa/pa Bildern (clean feed)</definition>
+			<broader qcode="dpasrv:images-en"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:secondary"/>
+			<related rel="dparel:requires" qcode="dpacountry:196"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-child"/>
+			<name role="nrol:full">dpa Kindersparte</name>
+			<name role="nrol:display">dpa Kindersparte</name>
+			<name role="nrol:mnemonic">section-de-child</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Kinderdienst</definition>
+			<sameAs qcode="dpasrv:bkind"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Nachrichten für Kinder +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Nachrichten für Kinder" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-obs"/>
+			<name role="nrol:full">na Presseservice DE</name>
+			<name role="nrol:display">na Presseservice DE</name>
+			<name role="nrol:mnemonic">section-de-obs</name>
+			<definition xml:lang="de">Das Bildangebot von news-aktuell bereitgestellt durch dpa in deutscher Sprache</definition>
+			<sameAs qcode="dpasrv:bobs"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpasrv:section-de-obs"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpacprh:3p"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-tmn"/>
+			<name role="nrol:full">dpa Themendienst</name>
+			<name role="nrol:display">dpa Themendienst</name>
+			<name role="nrol:mnemonic">section-de-tmn</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Themendienst</definition>
+			<sameAs qcode="dpasrv:btmn"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trends"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Themendienst +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des dpa-Themendienstes" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag"/>
+			<name role="nrol:full">dpa Magazin</name>
+			<name role="nrol:display">dpa Magazin</name>
+			<name role="nrol:mnemonic">section-de-mag</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin</definition>
+			<sameAs qcode="dpasrv:bmag"/>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trends"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-travel"/>
+			<name role="nrol:full">dpa Magazin Reise</name>
+			<name role="nrol:display">dpa Magazin Reise</name>
+			<name role="nrol:mnemonic">section-de-mag-travel</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Reise</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9342"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-automotive"/>
+			<name role="nrol:full">dpa Magazin Auto</name>
+			<name role="nrol:display">dpa Magazin Auto</name>
+			<name role="nrol:mnemonic">section-de-mag-automotive</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Auto</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9345"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-08-05T10:45:00+02:00" qcode="dpasrv:section-de-mag-autotest"/>
+			<name role="nrol:full">dpa Magazin Autotest</name>
+			<name role="nrol:display">dpa Magazin Autotest</name>
+			<name role="nrol:mnemonic">section-de-mag-autotest</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Autotest</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9316"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-home"/>
+			<name role="nrol:full">dpa Magazin Bauen &amp; Wohnen</name>
+			<name role="nrol:display">dpa Magazin Bauen &amp; Wohnen</name>
+			<name role="nrol:mnemonic">section-de-mag-home</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Bauen &amp; Wohnen</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9653"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-business"/>
+			<name role="nrol:full">dpa Magazin Beruf &amp; Bildung</name>
+			<name role="nrol:display">dpa Magazin Beruf &amp; Bildung</name>
+			<name role="nrol:mnemonic">section-de-mag-business</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Beruf &amp; Bildung</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9351"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-it"/>
+			<name role="nrol:full">dpa Magazin Computer&amp;Technik&amp;Internet</name>
+			<name role="nrol:display">dpa Magazin Computer&amp;Technik&amp;Internet</name>
+			<name role="nrol:mnemonic">section-de-mag-it</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Computer&amp;Technik&amp;Internet</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9354"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-wellness"/>
+			<name role="nrol:full">dpa Magazin Gesundheit&amp;Ernährung&amp;Wellness</name>
+			<name role="nrol:display">dpa Magazin Gesundheit&amp;Ernährung&amp;Wellness</name>
+			<name role="nrol:mnemonic">section-de-mag-wellness</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Gesundheit&amp;Ernährung&amp;Wellness</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9355"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-consumer"/>
+			<name role="nrol:full">dpa Magazin Geld &amp; Recht &amp; Verbraucher</name>
+			<name role="nrol:display">dpa Magazin Geld &amp; Recht &amp; Verbraucher</name>
+			<name role="nrol:mnemonic">section-de-mag-consumer</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Geld &amp; Recht &amp; Verbraucher</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9655"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-family"/>
+			<name role="nrol:full">dpa Magazin Familie &amp; Frauen &amp; Senioren</name>
+			<name role="nrol:display">dpa Magazin Familie &amp; Frauen &amp; Senioren</name>
+			<name role="nrol:mnemonic">section-de-mag-family</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Familie &amp; Frauen &amp; Senioren</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9363"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-stars"/>
+			<name role="nrol:full">dpa Magazin Stars &amp; Prominente</name>
+			<name role="nrol:display">dpa Magazin Stars &amp; Prominente</name>
+			<name role="nrol:mnemonic">section-de-mag-stars</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Stars &amp; Prominente</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9349"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-garden"/>
+			<name role="nrol:full">dpa Magazin Garten &amp; Tiere</name>
+			<name role="nrol:display">dpa Magazin Garten &amp; Tiere</name>
+			<name role="nrol:mnemonic">section-de-mag-garden</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Garten &amp; Tiere</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9656"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-02-08T10:45:00+01:00" qcode="dpasrv:section-de-mag-lifestyle"/>
+			<name role="nrol:full">dpa Magazin Lifestyle &amp; Mode</name>
+			<name role="nrol:display">dpa Magazin Lifestyle &amp; Mode</name>
+			<name role="nrol:mnemonic">section-de-mag-lifestyle</name>
+			<definition xml:lang="de">Das Bildangebot der dpa für den Dienst Magazin Lifestyle &amp; Mode</definition>
+			<broader qcode="dpasrv:section-de-mag"/>
+			<sameAs qcode="dpax-sapmatnr:9657"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Magazin +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des Dienstes dpa-Magazin" valuedatatype="xs:string"/>
+		</concept>
+		<concept>
+			<conceptId created="2017-06-08T10:45:00+02:00" retired="2019-02-01T00:00:00+01:00" qcode="dpasrv:europapress-latam"/>
+			<name role="nrol:full">Europa Press (es) Lateinamerika</name>
+			<name role="nrol:display">europapress-latam</name>
+			<name role="nrol:mnemonic">europapress-latam</name>
+			<definition xml:lang="de">Multimediales Produkt von Europa Press in spanischer Sprache für den lateinamerikanischen Raum</definition>
+			<note xml:lang="de">Dieser DIenst wird ersetzt durch dpasrv:europapress-esp</note>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+			<sameAs qcode="dpax-sapmatnr:1922"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-01-07T10:45:00+01:00" qcode="dpasrv:europapress-esp"/>
+			<name role="nrol:full">Europa Press Spanien</name>
+			<name role="nrol:display">europapress-esp</name>
+			<name role="nrol:mnemonic">europapress-esp</name>
+			<definition xml:lang="de">Multimediales Produkt von Europa Press in spanischer Sprache aus Spanien (entspricht AEX.DES)</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+			<sameAs qcode="dpax-sapmatnr:9902"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-01-07T10:45:00+01:00" qcode="dpasrv:europapress-int"/>
+			<name role="nrol:full">Europa Press International</name>
+			<name role="nrol:display">europapress-int</name>
+			<name role="nrol:mnemonic">europapress-int</name>
+			<definition xml:lang="de">Multimediales Produkt von dpa / Europa Press in spanischer Sprache (entspricht AEX.AEX)</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+			<sameAs qcode="dpax-sapmatnr:9904"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-01-07T10:45:00+01:00" qcode="dpasrv:europapres-tem"/>
+			<name role="nrol:full">Europa Press Verbrauchernachrichten</name>
+			<name role="nrol:display">europapress-tem</name>
+			<name role="nrol:mnemonic">europapress-tem</name>
+			<definition xml:lang="de">Multimediales Verbraucher Produkt von dpa / Europa Press in spanischer Sprache (entspricht AEX.TEM)</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+			<sameAs qcode="dpax-sapmatnr:9901"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-01-07T10:45:00+01:00" qcode="dpasrv:dpa-espanol"/>
+			<name role="nrol:full">dpa Textnachrichten Spanisch</name>
+			<name role="nrol:display">dpa-espanol</name>
+			<name role="nrol:mnemonic">dpe</name>
+			<definition xml:lang="de">Text Produkt der dpa in spanischer Sprache</definition>
+			<sameAs qcode="dpax-sapmatnr:9903"/>
+			<broader qcode="dpaagenturzeichen:dpa"/>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-04-30T12:00:00+02:00" qcode="dpasrv:graphics-ndk"/>
+			<name role="nrol:full">dpa-Kindergrafik</name>
+			<name role="nrol:display">dpa-Kindergrafik</name>
+			<name role="nrol:mnemonic">ndk</name>
+			<sameAs qcode="dpax-sapmatnr:9082"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-dpa"/>
+			<name role="nrol:full">dpa-Grafik</name>
+			<name role="nrol:display">dpa-Grafik</name>
+			<name role="nrol:mnemonic">dpa</name>
+			<sameAs qcode="dpax-sapmatnr:79"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-glo"/>
+			<name role="nrol:full">Globus-Grafik</name>
+			<name role="nrol:display">Globus-Grafik</name>
+			<name role="nrol:mnemonic">glo</name>
+			<sameAs qcode="dpax-sapmatnr:82"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-glw"/>
+			<name role="nrol:full">Globus-Wochenproduktion</name>
+			<name role="nrol:display">Globus-Wochenproduktion</name>
+			<name role="nrol:mnemonic">glw</name>
+			<!-- <sameAs qcode="dpax-sapmatnr:0000"/> -->
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-stp"/>
+			<name role="nrol:full">GlobusSteps</name>
+			<name role="nrol:display">GlobusSteps</name>
+			<name role="nrol:mnemonic">stp</name>
+			<sameAs qcode="dpax-sapmatnr:1940"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-biz"/>
+			<name role="nrol:full">dpa.globizz</name>
+			<name role="nrol:display">dpa.globizz</name>
+			<name role="nrol:mnemonic">biz</name>
+			<sameAs qcode="dpax-sapmatnr:9209"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-krs"/>
+			<name role="nrol:full">dpa-Kinderrätsel</name>
+			<name role="nrol:display">dpa-Kinderrätsel</name>
+			<name role="nrol:mnemonic">krs</name>
+			<sameAs qcode="dpax-sapmatnr:9721"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-dpa-e"/>
+			<name role="nrol:full">dpa-infographics</name>
+			<name role="nrol:display">dpa-infographics</name>
+			<name role="nrol:mnemonic">dpa-e</name>
+			<sameAs qcode="dpax-sapmatnr:83"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-bay"/>
+			<name role="nrol:full">dpa-regiografik Bayern</name>
+			<name role="nrol:display">dpa-regiografik Bayern</name>
+			<name role="nrol:mnemonic">bay</name>
+			<sameAs qcode="dpax-sapmatnr:1946"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-bwg"/>
+			<name role="nrol:full">dpa-regiografik Baden-Württemberg</name>
+			<name role="nrol:display">dpa-regiografik Baden-Württemberg</name>
+			<name role="nrol:mnemonic">bwg</name>
+			<sameAs qcode="dpax-sapmatnr:722"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-hrs"/>
+			<name role="nrol:full">dpa-regiografik Hessen</name>
+			<name role="nrol:display">dpa-regiografik Hessen</name>
+			<name role="nrol:mnemonic">hrs</name>
+			<sameAs qcode="dpax-sapmatnr:80"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-nor"/>
+			<name role="nrol:full">dpa-regiografik Nord</name>
+			<name role="nrol:display">dpa-regiografik Nord</name>
+			<name role="nrol:mnemonic">nor</name>
+			<sameAs qcode="dpax-sapmatnr:1182"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-nrw"/>
+			<name role="nrol:full">dpa-regiografik NRW</name>
+			<name role="nrol:display">dpa-regiografik NRW</name>
+			<name role="nrol:mnemonic">nrw</name>
+			<sameAs qcode="dpax-sapmatnr:81"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-tmn"/>
+			<name role="nrol:full">dpa-themendienst-grafik</name>
+			<name role="nrol:display">dpa-themendienst-grafik</name>
+			<name role="nrol:mnemonic">tmn</name>
+			<sameAs qcode="dpax-sapmatnr:9451"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-geo"/>
+			<name role="nrol:full">Globus-Geografie</name>
+			<name role="nrol:display">Globus-Geografie</name>
+			<name role="nrol:mnemonic">geo</name>
+			<sameAs qcode="dpax-sapmatnr:9210"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-02T12:00:00+02:00" qcode="dpasrv:graphics-ser"/>
+			<name role="nrol:full">Service-Grafik</name>
+			<name role="nrol:display">Service-Grafik</name>
+			<name role="nrol:mnemonic">ser</name>
+			<sameAs qcode="dpax-sapmatnr:9212"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+			<related qcode="dpachannel:picture-alliance"/>
+		</concept>
+		<concept>
+			<conceptId created="2020-02-05T12:00:00+02:00" qcode="dpasrv:graphics-sch"/>
+			<name role="nrol:full">dpa-Grafik Schweiz</name>
+			<name role="nrol:display">dpa-Grafik Schweiz</name>
+			<name role="nrol:mnemonic">sch</name>
+			<sameAs qcode="dpax-sapmatnr:2020"/>
+			<related qcode="ninat:graphic"/>
+			<related qcode="dpacprh:dpa-infografik" rel="dparel:supplier"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-05-29T17:00:00+02:00" qcode="dpasrv:factchecking"/>
+			<name role="nrol:mnemonic">factchecking</name>
+			<name role="nrol:display">dpa-Factchecking</name>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:erd-ch"/>
+			<name role="nrol:full">dpa Europadienst CH</name>
+			<name role="nrol:mnemonic">erd-ch</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:erd-ch-photo"/>
+			<name role="nrol:full">dpa Bilderdienst für Keystone-SDA</name>
+			<name role="nrol:display">dpa Bilderdienst für Keystone-SDA</name>
+			<name role="nrol:mnemonic">photostream-de-erd-ch</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpacountry:146"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:erd-ch-mm"/>
+			<name role="nrol:mnemonic">erd-ch-mm</name>
+			<name role="nrol:full">dpa Europadienst CH multimedial</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:easynews"/>
+			<name role="nrol:full">dpa easynews</name>
+			<name role="nrol:mnemonic">easynews</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:easynews-photo"/>
+			<name role="nrol:full">dpa easynews</name>
+			<name role="nrol:display">dpa easynews</name>
+			<name role="nrol:mnemonic">easynews</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:easynews-mm"/>
+			<name role="nrol:mnemonic">easynews-mm</name>
+			<name role="nrol:full">dpa easynews</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:factchecking-int"/>
+			<name role="nrol:full">dpa Factchecking</name>
+			<name role="nrol:mnemonic">factchecking-int</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:factchecking-photo"/>
+			<name role="nrol:full">dpa factchecking-photo</name>
+			<name role="nrol:display">dpa factchecking-photo</name>
+			<name role="nrol:mnemonic">factchecking-photo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:newslabwire"/>
+			<name role="nrol:full">dpa newslabwire</name>
+			<name role="nrol:mnemonic">newslabwire</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:newslabwire-mm"/>
+			<name role="nrol:mnemonic">newslabwire-mm</name>
+			<name role="nrol:full">dpa newslabwire multimedial</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:newslabwire-photo"/>
+			<name role="nrol:full">dpa newslabwire-photo</name>
+			<name role="nrol:display">dpa newslabwire</name>
+			<name role="nrol:mnemonic">newslabwire-photo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trends"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:ann-news"/>
+			<name role="nrol:full">dpa ann-news</name>
+			<name role="nrol:mnemonic">ann</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="dpachannel:mecom"/>
+			<broader qcode="dpaagenturzeichen:ann"/>
+			<broader qcode="dpasrv:dpa-portal"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:themenwelten"/>
+			<name role="nrol:full">dpa themenwelten</name>
+			<name role="nrol:mnemonic">themenwelten</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:themenwelten-mm"/>
+			<name role="nrol:mnemonic">themenwelten-mm</name>
+			<name role="nrol:full">dpa themenwelten</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:themenwelten-photo"/>
+			<name role="nrol:full">dpa themenwelten-photo</name>
+			<name role="nrol:display">dpa themenwelten</name>
+			<name role="nrol:mnemonic">themenwelten-photo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:shortnews"/>
+			<name role="nrol:full">dpa shortnews</name>
+			<name role="nrol:mnemonic">shortnews</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:shortnews-mm"/>
+			<name role="nrol:mnemonic">shortnews-mm</name>
+			<name role="nrol:full">dpa shortnews</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:shortnews-photo"/>
+			<name role="nrol:full">dpa shortnews-photo</name>
+			<name role="nrol:display">dpa shortnews</name>
+			<name role="nrol:mnemonic">shortnews-photo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:shortnews-custom"/>
+			<name role="nrol:full">dpa shortnews-custom</name>
+			<name role="nrol:mnemonic">shortnews-custom</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-02-06T13:00:00+01:00" qcode="dpasrv:shortnews-custom-mm"/>
+			<name role="nrol:mnemonic">shortnews-custom-mm</name>
+			<name role="nrol:full">dpa shortnews-custom</name>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:shortnews-custom-photo"/>
+			<name role="nrol:full">dpa shortnews-custom-photo</name>
+			<name role="nrol:display">dpa shortnews-custom</name>
+			<name role="nrol:mnemonic">shortnews-custom-photo</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2019-06-04T09:00:00+02:00" qcode="dpasrv:shortnews-custom-zdfsport"/>
+			<name role="nrol:full">dpa shortnews-custom-zdfsport</name>
+			<name role="nrol:mnemonic">shortnews-custom-zdfsport</name>
+			<definition>ToDo</definition>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2022-10-31T00:00:00+02:00" qcode="dpasrv:VID-ROH-DIG"/>
+			<name role="nrol:mnemonic">VID-ROH-DIG</name>
+			<name role="nrol:full">Rohmaterial dpa</name>
+			<related qcode="ninat:video"/>
+		</concept>
+		<concept>
+			<conceptId created="2022-10-31T00:00:00+02:00" qcode="dpasrv:VID-ROH-DIG-TV"/>
+			<name role="nrol:mnemonic">VID-ROH-DIG-TV</name>
+			<name role="nrol:full">Rohmaterial TNN digital</name>
+			<related qcode="ninat:video"/>
+		</concept>
+		<concept>
+			<conceptId created="2022-10-31T00:00:00+02:00" qcode="dpasrv:VID-ROH-TV"/>
+			<name role="nrol:mnemonic">VID-ROH-TV</name>
+			<name role="nrol:full">Rohmaterial TNN TV</name>
+			<related qcode="ninat:video"/>
+		</concept>
+		<concept>
+			<conceptId created="2022-10-31T00:00:00+02:00" qcode="dpasrv:VID-TV-AUFTRAG"/>
+			<name role="nrol:mnemonic">VID-TV-AUFTRAG</name>
+			<name role="nrol:full">Rohmaterial dpa - 1660</name>
+			<related qcode="ninat:video"/>
+		</concept>
+		<concept>
+			<conceptId created="2022-10-31T00:00:00+02:00" qcode="dpasrv:VID-RTP-DIG"/>
+			<name role="nrol:mnemonic">VID-RTP-DIG</name>
+			<name role="nrol:full">dpa Videoservice</name>
+			<related qcode="ninat:video"/>
+		</concept>
+		<concept>
+			<conceptId created="2023-08-21T13:00:00+01:00" qcode="dpasrv:cc-fertigseiten-funke"/>
+			<name role="nrol:mnemonic">cc-fertigseiten-funke</name>
+			<name role="nrol:full">dpa cc-fertigseiten-funke</name>
+			<definition>Dienst für die Fertigseitenproduktion von CustomContent für die Funke Zentralredaktion</definition>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2023-08-21T09:00:00+02:00" qcode="dpasrv:cc-fertigseiten-photo"/>
+			<name role="nrol:full">dpa cc-fertigseiten-photo</name>
+			<name role="nrol:display">dpa cc-fertigseiten</name>
+			<name role="nrol:mnemonic">cc-fertigseiten-photo</name>
+			<definition>Sammeldienst für die in der Fertigseitenproduktion von Custom Content verwendeten Bilder</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpapubtype:trends"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-01-16T16:45:00+01:00" qcode="dpasrv:lighttable-internal"/>
+			<name role="nrol:full">dpa Themendienst</name>
+			<name role="nrol:display">dpa Themendienst</name>
+			<name role="nrol:mnemonic">lighttable-internal</name>
+			<definition xml:lang="de">Vorproduktion Bildangebot der dpa für den Themendienst</definition>
+			<related qcode="ninat:picture"/>
+			<conceptExtProperty rel="dparel:srvtrailer" value="+++ dpa-Themendienst +++" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:srvnote" value="Honorarfrei nur für Bezieher des dpa-Themendienstes" valuedatatype="xs:string"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept id="dpasrvlabwire">
+			<conceptId created="2024-02-29T07:16:00+02:00" qcode="dpasrv:labwire"/>
+			<name role="nrol:mnemonic">labwire</name>
+			<name role="nrol:display">labwire</name>
+			<name role="nrol:full">dpa labwire</name>
+			<definition xml:lang="de">Zum Test der Schnittstelle zwischen Rubix und dem Corelog für multimediale Dienste</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="ninat:text"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-03-26T09:00:00+02:00" qcode="dpasrv:labwire-photo"/>
+			<name role="nrol:full">dpa labwire-photo</name>
+			<name role="nrol:display">dpa labwire-photo</name>
+			<name role="nrol:mnemonic">labwire-photo</name>
+			<definition>Zum Test der Schnittstelle zwischen Rubix und dem Corelog für multimediale Dienste</definition>
+			<related qcode="ninat:picture"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-03-27T09:00:00+02:00" qcode="dpasrv:dna"/>
+			<name role="nrol:full">Democracy News Alliance</name>
+			<name role="nrol:mnemonic">dna</name>
+			<definition>Democracy News Alliance</definition>
+			<broader qcode="dpaagenturzeichen:dna"/>
+			<related qcode="ninat:text"/>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-03-27T09:00:00+02:00" qcode="dpasrv:dna-photo"/>
+			<name role="nrol:full">Democracy News Alliance</name>
+			<name role="nrol:display">dpa dna</name>
+			<name role="nrol:mnemonic">dna-photo</name>
+			<definition>Democracy News Alliance</definition>
+			<related qcode="ninat:picture"/>
+			<related qcode="dpachannel:mecom"/>
+			<related rel="dparel:requires" qcode="dpacountry:1"/>
+			<related rel="dparel:requires" qcode="dpamarket:primary"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-03-27T09:00:00+02:00" qcode="dpasrv:dna-mm"/>
+			<name role="nrol:mnemonic">dna-mm</name>
+			<name role="nrol:full">Democracy News Alliance</name>
+			<definition>Democracy News Alliance</definition>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-08-26T09:02:00+02:00" qcode="dpasrv:labwire-ap-kairo-preview"/>
+			<name role="nrol:full">Preview des zukünftigen gemeinsamen arabischen Dienstes (dpa/AP)</name>
+			<name role="nrol:display" xml:lang="en">dpa international arabic (preview)</name>
+			<name role="nrol:mnemonic">labwire-ap-kairo-preview</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-08-28T10:30:00+02:00" qcode="dpasrv:cc-backupfertigseiten-funke"/>
+			<name role="nrol:mnemonic">cc-backupfertigseiten-funke</name>
+			<name role="nrol:full">dpa cc-backupfertigseiten-funke</name>
+			<definition>Backup Dienst für die Fertigseitenproduktion von CustomContent für die Funke Zentralredaktion</definition>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-09-16T09:02:00+02:00" qcode="dpasrv:arabic-3p"/>
+			<name role="nrol:full">Gemeinsamer arabischer Dienst (dpa/AP)</name>
+			<name role="nrol:display" xml:lang="en">dpa international arabic</name>
+			<name role="nrol:mnemonic" xml:lang="ar">arabic-3p</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+		<concept>
+			<conceptId created="2024-09-16T09:02:00+02:00" qcode="dpasrv:arabic-dpa"/>
+			<name role="nrol:full">Arabischer Dienst (G2)</name>
+			<name role="nrol:display" xml:lang="en">dpa international arabic</name>
+			<name role="nrol:mnemonic" xml:lang="ar">arabic-dpa</name>
+			<note xml:lang="en">This service contains text message in Arabic language only</note>
+			<related qcode="ninat:text"/>
+			<conceptExtProperty rel="dparel:inesack" value="true" valuedatatype="xs:boolean"/>
+		</concept>
+	</conceptSet>
+	<schemeMeta authority="http://www.dpa.com" preferredalias="dpasrv" uri="http://g2.dpa.com/cv/service/">
+		<definition>TODO</definition>
+		<name>dpasrv</name>
+		<schemeMetaExtProperty rel="dparel:ispublic" value="true" valuedatatype="xs:boolean"/>
+	</schemeMeta>
+</knowledgeItem>

@@ -1,0 +1,330 @@
+{
+  "format": "digitalwires@0.9.1",
+  "type": "composite",
+  "entry_id": "wHFbSi21EfF2DSch8DkBDYl0XfvHwhNl3BjOyZdM",
+  "updated": "2024-11-21T10:14:49Z",
+  "urn": "urn:newsml:ap.org:20230101:cd1ee53edee0df1bf00de01b044366b4",
+  "version_created": "2024-11-21T11:13:20+01:00",
+  "version": 4,
+  "pubstatus": "usable",
+  "signal": null,
+  "embargoed": null,
+  "content_created": null,
+  "language": "en",
+  "urgency": 4,
+  "kicker": null,
+  "headline": "Shares in India's Adani Group plunge 20% after US bribery, fraud indictments",
+  "subhead": null,
+  "teaser": null,
+  "byline": "By ASHOK SHARMA",
+  "dateline": null,
+  "article_html": "<section class=\"main\"><p>One of Asia\u2019s richest men, controversial Indian tycoon Gautam Adani, is again in the spotlight. His companies\u2019 stocks plunged up to 20% on Thursday after he was indicted by U.S. prosecutors on charges he duped investors in a massive solar energy project in India by concealing that it was being facilitated by an alleged bribery scheme. </p><p>In an indictment unsealed by federal prosecutors in New York on Wednesday, Adani, 62, was charged with securities fraud and conspiracy to commit securities and wire fraud.</p><p>One result of the U.S. legal action is that the Adani group decided not to proceed with a proposed U.S. dollar-denominated bond offering. Adani Renewables announced the decision in letters to the Bombay Stock Exchange and the National Stock Exchange of India.</p><p>In a statement, the group said the allegations against directors of Adani Green \u201care baseless and denied.\u201d The U.S. Department of Justice said \u201cthe charges in the indictment are allegations, and the defendants are presumed innocent unless and until proven guilty.\u201d </p><h2>Who is Gautam Adani?</h2><p>Adani is the son of a middle-class family in Ahmedabad in western India\u2019s Gujarat state. He quit college to become a diamond trader in Mumbai, India\u2019s financial capital. In the 1980s, he started importing plastics before establishing Adani Enterprises, which traded in everything from shoes to buckets and remains his flagship company.</p><p>India opened up its economy in the 1990s and a new middle class emerged as tens of millions of people escaped poverty and the economy boomed, prompting Adani to bet on infrastructure and coal.</p><p>Adani\u2019s first big project, the Mundra port in Gujarat, opened in 1998 and is now India\u2019s largest. Adani Ports and Special Economic Zone Ltd. is India\u2019s biggest private port operator. Within a decade, Adani became India\u2019s largest developer and operator of coal mines. According to Adani Power\u2019s website, it has expanded to Australia and Indonesia and is on track to be \u201cone of the largest mining groups in the world.\u201d</p><p>Adani companies, India's second-largest conglomerate, operate airports in major cities, build roads, generate electricity, manufacture defense equipment, develop agricultural drones, sell cooking oil and run a media outlet. Despite his fossil fuel roots, the billionaire Adani Green aims to become the world\u2019s largest renewable energy player by 2030. </p><h2>Why is Adani controversial?</h2><p>Adani is considered close to the Hindu nationalist government, and the political opposition has long accused Prime Minister Narendra Modi of having close ties with the tycoon. They both hail from the western state of Gujarat.</p><p>The businessman's critics say much of his success stems from his close ties to the government and Modi. For example, they have accused the government of adjusting bidding rules to make it easier for Adani to win contracts to operate airports. The company denies this, saying contracts were won relatively transparently.</p><p>Opposition Congress party leader Rahul Gandhi called for Adani\u2019s arrest for his criminal acts in the United States and India and has accused Modi of protecting him.</p><p>India\u2019s main opposition also demanded a parliamentary committee probe into Adani Group dealings, which Jairam Ramesh, a leader of the Congress Party, said are causing \"growing monopolization in key sectors of the Indian economy, fueling inflation, and posing huge foreign policy challenges as well.\u201d</p><p>Ramesh said his party has been \"bringing out the various dimensions of these scams and the intimate nexus between the PM (Modi) and his favorite businessman. These questions have remained unanswered.\u201d</p><p>Last year, the Adani companies lost $68 billion in market value after short-selling firm Hindenburg Research accused Adani of \u201cpulling the largest con in corporate history,\u201d triggering a massive sell-off of the group's stocks.</p><p>U.S.-based Hindenburg accused Adani companies of stock price manipulation and fraud just as the group began a share offering meant to raise $2.5 billion.</p><p>The Adani group dismissed Hindenburg\u2019s allegations, saying none were \u201cbased on independent or journalistic fact finding.\u201d Adani\u2019s response included documents and data tables and it said the group had made all necessary regulatory disclosures and has abided by local laws.</p><h2>How Adani became Asia's richest man</h2><p>Adani\u2019s net worth shot up about 2,000% in recent years as share prices for his listed companies soared.</p><p>Before Modi took office, Adani was friendly with the rival Congress Party, which governed Gujarat state when many of his early projects began. Adani has been \u201cclose to every politician in power,\u201d R N Bhaskar, a journalist who wrote a biography on Adani, told The Associated Press.</p><p>Adani\u2019s supporters say he has cleverly aligned the group\u2019s priorities with those of the government by investing in key industries like renewable energy, defense, and agriculture. His projects overseas, in strategically important countries like neighboring Sri Lanka, help New Delhi compete with rival Beijing in the region.</p></section>",
+  "infobox_html": null,
+  "linkbox_html": null,
+  "creditline": "ASSOCIATED PRESS",
+  "copyrightnotice": "Copyright 2024 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed without permission.",
+  "usageterms": "This content is intended for editorial use only. For other uses, additional clearances may be required.",
+  "autopublishnotice": null,
+  "notepad": null,
+  "ednotes": [
+    {
+      "role": "dnlrole:ap.ednote",
+      "ednote": "Eds: CORRECTS: Indian tycoon is one of the richest men in Asia. Adds Adani Group's statement, quotes from Indian opposition leader",
+      "is_publishable": false
+    }
+  ],
+  "descriptions": null,
+  "associations": [
+    {
+      "type": "image",
+      "urn": "urn:newsml:ap.org:20230101:216d9149714c4d5e853c77b187cc9a01",
+      "version": 1,
+      "rank": 1,
+      "version_created": "2024-11-21T08:55:46+01:00",
+      "headline": "India US Adani Bribery Indictment",
+      "is_featureimage": true,
+      "caption": "India's opposition Congress party leader Rahul Gandhi, center, addresses the media on Indian businessman Gautam Adani, after Adani was indicted by U.S. prosecutors on charges he duped investors in a massive solar energy project in India, in New Delhi, India, Thursday, Nov. 21, 2024. Image behind shows Adani, on left with Indian Prime Minister Narendra Modi, on right. (AP Photo/Manish Swarup)",
+      "creditline": "ASSOCIATED PRESS",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": 2048,
+          "height": 1508,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d1vdx0puhh6tge.cloudfront.net/v4/imgresize/crlpre4ap/docid/urn:newsml:ap.org:20230101:216d9149714c4d5e853c77b187cc9a01/ghqm2mb6dp-v1-ax-s2048.jpeg?signature=XqehoqYn7T0yHb5wxEjrgE5lYsg&expires=1732320000"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "urn": "urn:newsml:ap.org:20230101:6157eabe8e1d4b63bfb03354adff891e",
+      "version": 1,
+      "rank": 2,
+      "version_created": "2024-11-21T09:13:21+01:00",
+      "headline": "India Adani Bribery Indictment",
+      "is_featureimage": false,
+      "caption": "FILE- A tree with dried branches stands outside Adani Corporate House in Ahmedabad, India, Jan. 27, 2023. (AP Photo/Ajit Solanki, File)",
+      "creditline": "ASSOCIATED PRESS",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": 2048,
+          "height": 1365,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d1vdx0puhh6tge.cloudfront.net/v4/imgresize/crlpre4ap/docid/urn:newsml:ap.org:20230101:6157eabe8e1d4b63bfb03354adff891e/nh2q6rncni-v1-ax-s2048.jpeg?signature=U-MXGPYLdnVUGglKLaiRNtykh1E&expires=1732320000"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "urn": "urn:newsml:ap.org:20230101:a5e655fdfdcb4efa872f5435179d2543",
+      "version": 1,
+      "rank": 3,
+      "version_created": "2024-11-20T22:12:57+01:00",
+      "headline": "Adani Bribery Indictment",
+      "is_featureimage": false,
+      "caption": "FILE - India's Adani Group Chairman Gautam Adani addresses the Vibrant Gujarat Global Summit in Gandhinagar, India, Jan.10, 2024. (AP Photo/Ajit Solanki, File)",
+      "creditline": "ASSOCIATED PRESS",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": 2048,
+          "height": 1365,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d1vdx0puhh6tge.cloudfront.net/v4/imgresize/crlpre4ap/docid/urn:newsml:ap.org:20230101:a5e655fdfdcb4efa872f5435179d2543/j2ega74jhd-v1-ax-s2048.jpeg?signature=aQBn8RSig9zA4eESldG4zDCmTm4&expires=1732320000"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "urn": "urn:newsml:ap.org:20230101:35ffc7b2b294411a88b63999289404ab",
+      "version": 1,
+      "rank": 4,
+      "version_created": "2024-11-21T08:57:49+01:00",
+      "headline": "India US Adani Bribery Indictment",
+      "is_featureimage": false,
+      "caption": "India's opposition Congress party leader Rahul Gandhi, addresses the media on Indian businessman Gautam Adani, after Adani was indicted by U.S. prosecutors on charges he duped investors in a massive solar energy project in India, in New Delhi, India, Thursday, Nov. 21, 2024. An image of Adani is behind. (AP Photo/Manish Swarup)",
+      "creditline": "ASSOCIATED PRESS",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": 1344,
+          "height": 2048,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d1vdx0puhh6tge.cloudfront.net/v4/imgresize/crlpre4ap/docid/urn:newsml:ap.org:20230101:35ffc7b2b294411a88b63999289404ab/d7t7hi6w67-v1-ax-s2048.jpeg?signature=fAXvEUt4uI3zO2CMOr1rdahU4OE&expires=1732320000"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "urn": "urn:newsml:ap.org:20230101:33842630aaf84be9a511f674bc41091a",
+      "version": 1,
+      "rank": 5,
+      "version_created": "2024-11-21T09:53:25+01:00",
+      "headline": "India US Adani Bribery Indictment",
+      "is_featureimage": false,
+      "caption": "India's opposition Congress party leader Rahul Gandhi addresses the media on Indian businessman Gautam Adani, after Adani was indicted by U.S. prosecutors on charges he duped investors in a massive solar energy project in India, in New Delhi, India, Thursday, Nov. 21, 2024. Image behind shows Adani. (AP Photo/Manish Swarup)",
+      "creditline": "ASSOCIATED PRESS",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": 2048,
+          "height": 1365,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d1vdx0puhh6tge.cloudfront.net/v4/imgresize/crlpre4ap/docid/urn:newsml:ap.org:20230101:33842630aaf84be9a511f674bc41091a/3t4garpev4-v1-ax-s2048.jpeg?signature=sCyCwh4soeHf71qmyYUKAFEzUEU&expires=1732320000"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "type": "dnltype:signal",
+      "name": "newscontent",
+      "qcode": "apsig:newscontent"
+    },
+    {
+      "type": "dnltype:pubstatus",
+      "name": "usable",
+      "qcode": "stat:usable"
+    },
+    {
+      "type": "dnltype:wire",
+      "name": "apwire",
+      "qcode": "dpasrv:apwire"
+    },
+    {
+      "type": "dnltype:creator",
+      "name": "By ASHOK SHARMA",
+      "qcode": null,
+      "role": null
+    },
+    {
+      "type": "dnltype:infosource",
+      "name": "AP",
+      "qcode": null,
+      "role": "crole:source"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "f",
+      "qcode": "apcategorycode:f"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "i",
+      "qcode": "apcategorycode:i"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "World news",
+      "qcode": "apsubject:bb2d2c5f441a452cb24bb511a2ab5eea"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "General news",
+      "qcode": "apsubject:f25af2d07e4e100484f5df092526b43e"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Climate and environment",
+      "qcode": "apsubject:8783d248894710048286ba0a2b2ca13e"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Business",
+      "qcode": "apsubject:c8e409f8858510048872ff2260dd383e"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Politics",
+      "qcode": "apsubject:86aad5207dac100488ecba7fa5283c3e"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Corporate crime",
+      "qcode": "apsubject:70613b38899b10048dccd56c852d093e"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Financial markets",
+      "qcode": "apsubject:60a31c1888f91004804d8503ef5018bd"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Business",
+      "qcode": "apsubject:c8e409f8858510048872ff2260dd383e"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Stocks and bonds",
+      "qcode": "apsubject:5235a7a088e910048f29f8851349f9bd"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Bribery",
+      "qcode": "apsubject:9c0bd01cd7c84527bad1319c99abb3ea"
+    },
+    {
+      "type": "dnltype:subject",
+      "name": "Indictments",
+      "qcode": "apsubject:190245e5bb61478b8771dd1f86cbf424"
+    },
+    {
+      "type": "dnltype:located",
+      "name": "New Delhi",
+      "qcode": null
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "adani india bribery tycoon modi",
+      "qcode": null,
+      "rank": null
+    },
+    {
+      "type": "dnltype:geosubject",
+      "name": "Mumbai",
+      "qcode": "apgeo:9d9760d07ec110048d15df092526b43e",
+      "rank": null
+    },
+    {
+      "type": "dnltype:geosubject",
+      "name": "Ahmedabad",
+      "qcode": "apgeo:5a3cb010464d49c59bdd7b2199fda4a0",
+      "rank": null
+    },
+    {
+      "type": "dnltype:geosubject",
+      "name": "Asia",
+      "qcode": "apgeo:661812607d5b100481f3c076b8e3055c",
+      "rank": null
+    },
+    {
+      "type": "dnltype:geosubject",
+      "name": "India",
+      "qcode": "apgeo:661f3a687d5b100482a7c076b8e3055c",
+      "rank": null
+    },
+    {
+      "type": "dnltype:desk",
+      "name": "economics",
+      "qcode": "dpacat:wi"
+    },
+    {
+      "type": "dnltype:genre",
+      "name": "FullStory",
+      "qcode": "dnlgenre:ap.editorialrole.fullstory"
+    },
+    {
+      "type": "dnltype:genre",
+      "name": "Lead",
+      "qcode": "dnlgenre:ap.editorialtype.lead"
+    },
+    {
+      "type": "dnltype:genre",
+      "name": "Spot Development",
+      "qcode": "dnlgenre:ap.itemcontenttype.spot_development"
+    },
+    {
+      "type": "dnltype:urgency",
+      "name": "4",
+      "qcode": "urgency:4"
+    },
+    {
+      "type": "dnltype:person",
+      "name": "Narendra Modi",
+      "qcode": "apperson:af1303f9cdca44e496e56216783d7313"
+    },
+    {
+      "type": "dnltype:provider",
+      "name": "ap",
+      "qcode": "dnlprov:ap"
+    }
+  ],
+  "current_rubric_names": [],
+  "rubric_names": [],
+  "dpasubject_names": [],
+  "geosubject_names": [
+    "Mumbai",
+    "Ahmedabad",
+    "Asia",
+    "India"
+  ],
+  "keyword_names": [
+    "adani india bribery tycoon modi"
+  ],
+  "desk_names": [
+    "wi"
+  ],
+  "genre_names": [
+    "FullStory",
+    "Lead",
+    "Spot Development"
+  ],
+  "poi_names": [],
+  "scope_names": []
+}

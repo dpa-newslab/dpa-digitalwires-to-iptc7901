@@ -1,0 +1,91 @@
+{
+  "format": "digitalwires@0.9.1",
+  "type": "composite",
+  "entry_id": "jHyoi7bTYGsPjTmTFE9yRN1brY7emL57n0pItYzr60",
+  "updated": "2024-11-20T17:42:38Z",
+  "urn": "urn:newsml:dpa.com:20090101:dsv:text:ERG_MM_TE_FEDCUP_W_2024_1125",
+  "version_created": "2024-11-20T18:41:51+01:00",
+  "version": 52,
+  "pubstatus": null,
+  "signal": null,
+  "embargoed": null,
+  "content_created": null,
+  "language": "de",
+  "urgency": 3,
+  "kicker": null,
+  "headline": "Ergebnisse Tennis",
+  "subhead": null,
+  "teaser": null,
+  "byline": null,
+  "dateline": null,
+  "article_html": "<section class=\"main\"><div class=\"sport\"><p>Billie Jean King Cup</p><p>K.o.-Runde in M\u00e1laga/Spanien</p><p>Halbfinale</p><p>Dienstag, 19.11.2024:<br/>Gro\u00dfbritannien - Slowakei 1:2<br/>Emma Raducanu (Gro\u00dfbritannien) - Viktoria Hruncakova (Slowakei) 6:4, 6:4; Katie Boulter (Gro\u00dfbritannien) - Rebecca Sramkova (Slowakei) 6:2, 4:6, 4:6; Olivia Nicholls/Heather Watson (Gro\u00dfbritannien) - Viktoria Hruncakova/Tereza Mihalikova (Slowakei) 2:6, 2:6</p><p>Finale</p><p>Mittwoch, 20.11.2024:<br/>Italien - Slowakei 1:0<br/>Viktoria Hruncakova (Slowakei) - Lucia Bronzetti (Italien) 2:6, 4:6; Rebecca Sramkova (Slowakei) - Jasmine Paolini (Italien) 18.45; Viktoria Hruncakova/Tereza Mihalikova (Slowakei) - Sara Errani/Jasmine Paolini (Italien) 20.15</p></div></section>",
+  "infobox_html": null,
+  "linkbox_html": null,
+  "creditline": null,
+  "copyrightnotice": "Copyright dsv - All rights reserved\n\t\t\t\t",
+  "usageterms": null,
+  "autopublishnotice": null,
+  "notepad": {
+    "header_html": "<header><h3>Notizblock</h3></header>",
+    "public_html": "<section class=\"np-public\"><ul></ul></section>",
+    "nonpublic_html": null
+  },
+  "ednotes": [],
+  "descriptions": null,
+  "associations": [],
+  "categories": [
+    {
+      "type": "dnltype:wire",
+      "name": "spe",
+      "qcode": "dpasrv:spe"
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "Ergebnisse",
+      "qcode": null,
+      "rank": 1
+    },
+    {
+      "type": "dnltype:desk",
+      "name": "sp",
+      "qcode": "dpacat:sp"
+    },
+    {
+      "type": "dnltype:genre",
+      "name": "Meldung",
+      "qcode": "dpatextgenre:1"
+    },
+    {
+      "type": "dnltype:scope",
+      "name": "deutsch",
+      "qcode": "dpaaudience:deu"
+    },
+    {
+      "type": "dnltype:urgency",
+      "name": "3",
+      "qcode": "urgency:3"
+    },
+    {
+      "type": "dnltype:provider",
+      "name": "dpa",
+      "qcode": "dnlprov:dpa"
+    }
+  ],
+  "current_rubric_names": [],
+  "rubric_names": [],
+  "dpasubject_names": [],
+  "geosubject_names": [],
+  "keyword_names": [
+    "Ergebnisse"
+  ],
+  "desk_names": [
+    "sp"
+  ],
+  "genre_names": [
+    "Meldung"
+  ],
+  "poi_names": [],
+  "scope_names": [
+    "deutsch"
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "format": "digitalwires@0.9.1",
+  "type": "composite",
+  "entry_id": "7CtJmnuclmanATPqGCiGauhvA4WgiluUd5BkIG6FTPo",
+  "updated": "2024-11-21T12:11:39Z",
+  "urn": "urn:newsml:dpa.com:20090101:europapress:photo-20241121130950",
+  "version_created": "2024-11-21T13:10:18+01:00",
+  "version": 1,
+  "pubstatus": "usable",
+  "signal": null,
+  "embargoed": null,
+  "content_created": "2016-04-21",
+  "language": "es",
+  "urgency": 4,
+  "kicker": null,
+  "headline": "Archivo - Monedas, moneda, billete, billetes,euro ,euros, capital, efectivo, met\u00e1lico, riqueza",
+  "subhead": null,
+  "teaser": null,
+  "byline": null,
+  "dateline": null,
+  "article_html": null,
+  "infobox_html": null,
+  "linkbox_html": null,
+  "creditline": "Europa Press",
+  "copyrightnotice": null,
+  "usageterms": null,
+  "autopublishnotice": null,
+  "notepad": null,
+  "ednotes": [],
+  "descriptions": [
+    {
+      "role": "drol:caption",
+      "description": "21/04/2016 Monedas, moneda, billete, billetes,euro ,euros, capital, efectivo, met\u00e1lico, riqueza EUROPA ESPA\u00d1A ECONOMIA"
+    }
+  ],
+  "associations": [
+    {
+      "type": "image",
+      "urn": "urn:newsml:dpa.com:20090101:europapress:photo-20241121130950",
+      "version": 1,
+      "rank": 1,
+      "version_created": "2024-11-21T13:10:18+01:00",
+      "headline": "Archivo - Monedas, moneda, billete, billetes,euro ,euros, capital, efectivo, met\u00e1lico, riqueza",
+      "is_featureimage": true,
+      "caption": "21/04/2016 Monedas, moneda, billete, billetes,euro ,euros, capital, efectivo, met\u00e1lico, riqueza EUROPA ESPA\u00d1A ECONOMIA",
+      "creditline": "Europa Press",
+      "renditions": [
+        {
+          "size": 2048,
+          "width": null,
+          "height": null,
+          "fovealarea": null,
+          "mimetype": "image/jpeg",
+          "url": "https://d3hzhyitlnc455.cloudfront.net/v3/image/resize/urn:newsml:dpa.com:20090101:europapress:photo-20241121130950-v1-s2048.jpeg?signature=hG-SOwclZcufRNeTigNs2gsGuzQ&expires=1732406400"
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "type": "dnltype:pubstatus",
+      "name": "usable",
+      "qcode": "stat:usable"
+    },
+    {
+      "type": "dnltype:wire",
+      "name": "europapress-int",
+      "qcode": "dpasrv:europapress-int"
+    },
+    {
+      "type": "dnltype:creator",
+      "name": "EUROPA PRESS",
+      "qcode": null,
+      "role": null
+    },
+    {
+      "type": "dnltype:infosource",
+      "name": null,
+      "qcode": null,
+      "role": "isrol:contentSource"
+    },
+    {
+      "type": "dnltype:contributor",
+      "name": "Europa Press",
+      "qcode": null,
+      "role": null
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "ECONOMIA",
+      "qcode": null,
+      "rank": null
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "ESPA\u00d1A",
+      "qcode": null,
+      "rank": null
+    },
+    {
+      "type": "dnltype:keyword",
+      "name": "EUROPA",
+      "qcode": null,
+      "rank": null
+    },
+    {
+      "type": "dnltype:desk",
+      "name": "economics",
+      "qcode": "dpacat:wi"
+    },
+    {
+      "type": "dnltype:urgency",
+      "name": "4",
+      "qcode": "urgency:4"
+    },
+    {
+      "type": "dnltype:provider",
+      "name": "dpa",
+      "qcode": "dnlprov:dpa"
+    }
+  ],
+  "current_rubric_names": [],
+  "rubric_names": [],
+  "dpasubject_names": [],
+  "geosubject_names": [],
+  "keyword_names": [
+    "ECONOMIA",
+    "ESPA\u00d1A",
+    "EUROPA"
+  ],
+  "desk_names": [
+    "wi"
+  ],
+  "genre_names": [],
+  "poi_names": [],
+  "scope_names": []
+}

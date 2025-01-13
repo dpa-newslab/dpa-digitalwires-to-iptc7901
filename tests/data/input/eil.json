@@ -1,0 +1,138 @@
+{
+      "format": "digitalwires@0.9.1",
+      "type": "composite",
+      "entry_id": "sVv2dSwZ2pxeXP3Yrf3VUHI4EUUviHpAPLnDJnH3yQ",
+      "updated": "2024-09-25T08:38:44Z",
+      "urn": "urn:newsml:dpa.com:20090101:240925-930-242744",
+      "version_created": "2024-09-25T10:37:24+02:00",
+      "version": 1,
+      "pubstatus": "usable",
+      "signal": null,
+      "embargoed": null,
+      "content_created": null,
+      "language": "de",
+      "urgency": 2,
+      "kicker": null,
+      "headline": "Grünen-Spitze tritt nach Wahlniederlagen ab",
+      "subhead": null,
+      "teaser": null,
+      "byline": null,
+      "dateline": "Berlin (dpa) - ",
+      "article_html": "<section class=\"main\"><p>Die Grünen-Spitze zieht nach den Misserfolgen der Partei bei mehreren Wahlen personelle Konsequenzen. Die Co-Vorsitzenden Ricarda Lang und Omid Nouripour gaben in Berlin den Rücktritt des gesamten Parteivorstandes im November bekannt. Zuvor hatte das Nachrichtenportal «Table Media» berichtet.</p></section>",
+      "infobox_html": null,
+      "linkbox_html": null,
+      "creditline": "dpa",
+      "copyrightnotice": "Copyright 2024, dpa (www.dpa.de). Alle Rechte vorbehalten",
+      "usageterms": "Nutzung nur nach schriftlicher Vereinbarung mit dpa\nUse only with the written agreement with dpa",
+      "autopublishnotice": null,
+      "notepad": {
+        "header_html": "<header><h3>Notizblock</h3></header>",
+        "public_html": "<section class=\"np-public\"><h4>Redaktionelle Hinweise</h4><ul><li>Zu diesem Text finden Sie Bilder mit folgendem Titel im dpa Bildangebot:</li><li>dpa-Eilmeldung</li></ul></section>",
+        "nonpublic_html": null
+      },
+      "ednotes": [
+        {
+          "role": "dpaednoterole:closingline",
+          "ednote": "dpa abc yydd n1 sku",
+          "is_publishable": true
+        },
+        {
+          "role": "dpaednoterole:editorialnote",
+          "ednote": "Zu diesem Text finden Sie Bilder mit folgendem Titel im dpa Bildangebot:",
+          "is_publishable": true
+        },
+        {
+          "role": "dpaednoterole:editorialnote",
+          "ednote": "dpa-Eilmeldung",
+          "is_publishable": true
+        }
+      ],
+      "descriptions": null,
+      "associations": [],
+      "categories": [
+        {
+          "type": "dnltype:pubstatus",
+          "name": "usable",
+          "qcode": "stat:usable"
+        },
+        {
+          "type": "dnltype:wire",
+          "name": "bdt",
+          "qcode": "dpasrv:bdt"
+        },
+        {
+          "type": "dnltype:wire",
+          "name": "bid",
+          "qcode": "dpasrv:bid"
+        },
+        {
+          "type": "dnltype:creator",
+          "name": "kunigkeit.sebastian",
+          "qcode": null,
+          "role": null
+        },
+        {
+          "type": "dnltype:contributor",
+          "name": "kunigkeit.sebastian",
+          "qcode": "dpa-ad:kunigkeit.sebastian",
+          "role": null
+        },
+        {
+          "type": "dnltype:dpasubject",
+          "name": "Partei",
+          "qcode": "medtop:20000651",
+          "rank": 1
+        },
+        {
+          "type": "dnltype:keyword",
+          "name": "Grüne",
+          "qcode": null,
+          "rank": 1
+        },
+        {
+          "type": "dnltype:geosubject",
+          "name": "Deutschland",
+          "qcode": "dpacountry:1",
+          "rank": 1
+        },
+        {
+          "type": "dnltype:desk",
+          "name": "pl",
+          "qcode": "dpacat:pl"
+        },
+        {
+          "type": "dnltype:genre",
+          "name": "Meldung",
+          "qcode": "dpatextgenre:1"
+        },
+        {
+          "type": "dnltype:urgency",
+          "name": "2",
+          "qcode": "urgency:2"
+        },
+        {
+          "type": "dnltype:provider",
+          "name": "dpa",
+          "qcode": "dnlprov:dpa"
+        }
+      ],
+      "current_rubric_names": [],
+      "rubric_names": [],
+      "dpasubject_names": [
+        "Partei"
+      ],
+      "geosubject_names": [
+        "Deutschland"
+      ],
+      "keyword_names": [
+        "Grüne"
+      ],
+      "desk_names": [
+        "pl"
+      ],
+      "genre_names": [
+        "Meldung"
+      ],
+      "poi_names": [],
+      "scope_names": []
+    }

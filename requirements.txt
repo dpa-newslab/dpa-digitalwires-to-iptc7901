@@ -1,0 +1,5 @@
+arrow==1.3.0
+html2text==2024.2.26
+markdownify==0.13.1
+six~=1.16.0
+beautifulsoup4~=4.12.3
