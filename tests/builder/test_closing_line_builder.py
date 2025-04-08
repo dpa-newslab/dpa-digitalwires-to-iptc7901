@@ -16,10 +16,11 @@
 # limitations under the License.
 
 import logging
+
 import pytest
 
-from iptc7901.builder.content_builder import ClosingLineBuilder
-from iptc7901.Context import Context
+from iptc7901 import DigitalwiresModel
+from iptc7901.builder import ClosingLineBuilder
 
 logger = logging.getLogger()
 
@@ -31,8 +32,8 @@ def test_data_filenames():
 
 def test_body_builder(test_data_json):
     dw = test_data_json["dw-1.json"]
-    context = Context(dw)
-    builder = ClosingLineBuilder(context)
+    dw_model = DigitalwiresModel(dw)
+    builder = ClosingLineBuilder(dw_model)
     result = builder.build()
 
     logger.info(result)
@@ -40,7 +41,7 @@ def test_body_builder(test_data_json):
     assert result == "".join(
         [
             ednote.get("ednote")
-            for ednote in context.digitalwire.get("ednotes", [])
+            for ednote in dw_model.get("ednotes", [])
             if ednote.get("role") == "dpaednoterole:closingline"
         ]
     )

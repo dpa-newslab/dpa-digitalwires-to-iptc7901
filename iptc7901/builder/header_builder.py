@@ -14,47 +14,39 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+from typing import Callable, Any
 
-from collections.abc import Generator
-
-from iptc7901 import Context
-from iptc7901.builder.AbstractIptcBuilder import AbstractIptcBuilder
-from iptc7901.builder.content_builder import TextBuilder
-from iptc7901.extractor.category_extractor import (
+from iptc7901.builder import AbstractIptcBuilder
+from iptc7901.digitalwires_model import DigitalwiresModel
+from iptc7901.builder import TextBuilder
+from iptc7901.extractor import (
     get_ressort,
     get_services,
     get_dpa_subjects,
     get_geo_subject,
+    get_urgency,
+    get_keywords,
 )
-from iptc7901.extractor.meta_extractor import get_urgency, get_keywords
-from iptc7901.renderer.header_renderer import render_header, render_subject
-from iptc7901.utils.CollectionUtils import extend_if_not_empty
-from iptc7901.utils.Mappings import service_to_iptc_agency_map
+from iptc7901.renderer import render_header, render_subject
+from iptc7901.utils import extend_if_not_empty, service_to_iptc_agency_map
 
 
 class HeaderBuilder(AbstractIptcBuilder):
     def __init__(
-        self,
-        context: Context,
-        service_sequence_generator: Generator[int, str, None] = None,
-        agency_sequence_generator: Generator[int, str, None] = None,
+        self, dw_model: DigitalwiresModel, find_sequence: Callable[[str], Any] = None
     ):
-        super().__init__(context)
-        self.service_sequence_generator = service_sequence_generator
-        self.agency_sequence_generator = agency_sequence_generator
-        if self.service_sequence_generator is not None:
-            next(self.service_sequence_generator)
-        if self.agency_sequence_generator is not None:
-            next(self.agency_sequence_generator)
+        super().__init__(dw_model)
+        self.find_sequence = find_sequence
 
     def build(self) -> str:
         return next(
             iter(
                 [
                     self.build_with(
-                        len(TextBuilder(context=self.context).build().split()), service
+                        len(TextBuilder(dw_model=self.dw_model).build().split()),
+                        service.qcode,
                     )
-                    for service in get_services(self.context)
+                    for service in get_services(self.dw_model)
                 ]
             )
         )
@@ -65,21 +57,23 @@ class HeaderBuilder(AbstractIptcBuilder):
         extend_if_not_empty(
             result,
             render_header(
-                self.context,
+                self.dw_model,
                 word_count,
                 lambda c: service,
                 (
-                    self.service_sequence_generator.send(service)
-                    if self.service_sequence_generator is not None
+                    next(self.find_sequence(service_qcode))
+                    if self.find_sequence is not None
                     else 0
                 ),
                 get_urgency,
                 get_ressort,
                 (
-                    self.agency_sequence_generator.send(
-                        service_to_iptc_agency_map.get(service, "dpa")
+                    next(
+                        self.find_sequence(
+                            f"dpaagenturzeichen:{service_to_iptc_agency_map.get(service, 'dpa')}"
+                        )
                     )
-                    if self.agency_sequence_generator is not None
+                    if self.find_sequence is not None
                     else 0
                 ),
             ),
@@ -89,22 +83,22 @@ class HeaderBuilder(AbstractIptcBuilder):
 
 
 class SluglineBuilder(AbstractIptcBuilder):
-    def __init__(self, context: Context):
-        super().__init__(context)
+    def __init__(self, dw_model: DigitalwiresModel):
+        super().__init__(dw_model)
 
     def build(self) -> str:
         result = []
-        if self.context.lang == "de":
+        if self.dw_model.lang() == "de":
             extend_if_not_empty(
                 result,
-                render_subject(self.context, [get_dpa_subjects, get_geo_subject]),
+                render_subject(self.dw_model, [get_dpa_subjects, get_geo_subject]),
             )
         else:
             extend_if_not_empty(
                 result,
-                render_subject(self.context, [get_geo_subject, get_dpa_subjects]),
+                render_subject(self.dw_model, [get_geo_subject, get_dpa_subjects]),
             )
-        extend_if_not_empty(result, render_subject(self.context, [get_keywords]))
+        extend_if_not_empty(result, render_subject(self.dw_model, [get_keywords]))
 
         slugline = ""
         for line in result:

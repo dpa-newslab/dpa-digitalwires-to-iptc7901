@@ -15,120 +15,136 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from iptc7901 import Context
-from iptc7901.Context import Context
-from iptc7901.utils.CollectionUtils import find_first_in, get_none_safe
+from iptc7901.digitalwires_model import DigitalwiresModel
+from iptc7901.utils import get_none_safe, EdNote
 
 
-def get_ednotes(context: Context) -> list[str]:
-    """
-    Returns a list of editorial notes from the ednotes given by ``"role": "dpaednoterole:editorialnote"``.
-    :param context: A context object of the digitalwires message.
+def get_ednotes(dw_model: DigitalwiresModel) -> list[EdNote]:
+    """Returns a list of editorial notes from the ednotes given by the role
+    ``dpaednoterole:editorialnote``.
+
+    :param dw_model: A model of the digitalwires message.
     :return: A list of editorial notes.
     """
-    return [
-        ednote.get("ednote", "")
-        for ednote in get_none_safe(context.digitalwire, "ednotes", [])
-        if ednote.get("role", "") == "dpaednoterole:editorialnote"
-    ]
+    return dw_model.notepad_items(
+        notepad_role="dpaednoterole:editorialnote", attrs=["ednote"]
+    )
 
 
-def get_public_notepad(context: Context) -> str:
+def get_public_notepad(dw_model: DigitalwiresModel) -> str:
+    """Returns the public notepad.
+
+    :param dw_model: A model of the digitalwires message.
+    :return: The public notepad as string. This is ``None`` if and only if there is a
+        public notepad entry having a null-value.
     """
-    Returns the public notepad.
-    :param context: A context object of the digitalwires message.
-    :return: The public notepad as string. This is ``None`` if and only if there is a public notepad entry having a null-value.
-    """
-    return get_none_safe(context.digitalwire, "notepad", {}).get("public_html", "")
+    return get_none_safe(dw_model, "notepad", {}).get("public_html", "")
 
 
-def get_non_public_notepad(context: Context) -> str:
+def get_non_public_notepad(dw_model: DigitalwiresModel) -> str:
+    """Returns the non-public notepad.
+
+    :param dw_model: A model of the digitalwires message.
+    :return: The non-public notepad as string. This is ``None`` if and only if there is
+        a non-public notepad entry having a null-value.
     """
-    Returns the non-public notepad.
-    :param context: A context object of the digitalwires message.
-    :return: The non-public notepad as string. This is ``None`` if and only if there is a non-public notepad entry having a null-value.
-    """
-    return get_none_safe(context.digitalwire, "notepad", {}).get("nonpublic_html", "")
+    return get_none_safe(dw_model, "notepad", {}).get("nonpublic_html", "")
 
 
-def get_notepad_header(context: Context) -> str:
+def get_notepad_header(dw_model: DigitalwiresModel) -> str:
+    """Returns the notepad header.
+
+    :param dw_model: A model of the digitalwires message.
+    :return: The notepad header as a string. This is ``None`` if and only if there is a
+        notepad header entry having null-value.
     """
-    Returns the notepad header.
-    :param context: A context object of the digitalwires message.
-    :return: The notepad header as a string. This is ``None`` if and only if there is a notepad header entry having null-value.
-    """
-    return get_none_safe(context.digitalwire, "notepad", {}).get("header_html", "")
+    return get_none_safe(dw_model, "notepad", {}).get("header_html", "")
 
 
-def get_closing_line(context: Context) -> str:
-    """
-    Returns the closing line from the ednotes. There should only be one closing line, but in case there are more, they are joined with an empty string.
-    :param context: A context object of the digitalwires message.
+def get_closing_line(dw_model: DigitalwiresModel) -> str:
+    """Returns the closing line from the ednotes.
+
+    There should only be one closing line, but in case there are more, they are joined
+    with an empty string.
+    :param dw_model: A model of the digitalwires message.
     :return: The closing line as a string.
     """
     return "".join(
-        [
-            ednote.get("ednote", "")
-            for ednote in get_none_safe(context.digitalwire, "ednotes", [])
-            if ednote.get("role", "") == "dpaednoterole:closingline"
-        ]
+        note.ednote
+        for note in dw_model.notepad_items(
+            notepad_role="dpaednoterole:closingline", attrs=["ednote"]
+        )
     )
 
 
-def get_correction(context: Context) -> str:
-    """
-    Returns the correction notes from the ednotes given by ``"role": "dpaednoterole:correctionshort"``
-    :param context: A context object of the digitalwires message.
-    :return: The correction notes as a string. If there are more than one, they are joined by a space.
+def get_correction(dw_model: DigitalwiresModel) -> str:
+    """Returns the correction notes from the ednotes given by the role
+    ``dpaednoterole:correctionshort``
+
+    :param dw_model: A model of the digitalwires message.
+    :return: The correction notes as a string. If there are more than one, they are
+        joined by a space.
     """
     return " ".join(
-        [
-            ednote.get("ednote", "")
-            for ednote in get_none_safe(context.digitalwire, "ednotes", [])
-            if ednote.get("role", "") == "dpaednoterole:correctionshort"
-        ]
+        note.ednote
+        for note in dw_model.notepad_items(
+            notepad_role="dpaednoterole:correctionshort", attrs=["ednote"]
+        )
     )
 
 
-def get_picture_ednote_de(context: Context) -> str:
-    """
-    Returns the picture note from the ednotes given by ``"role": "dpaednoterole:picture"``
-    :param context: A context object of the digitalwires message.
-    :return: The picture note as a string. If there are more than one, only the first result is returned.
+def get_picture_ednote_de(dw_model: DigitalwiresModel) -> str:
+    """Returns the picture note from the ednotes given by the role
+    ``dpaednoterole:picture``
+
+    :param dw_model: A model of the digitalwires message.
+    :return: The picture note as a string. If there are more than one, only the first
+        result is returned.
     """
     return next(
         iter(
-            [
-                ednote.get("ednote", "")
-                for ednote in get_none_safe(context.digitalwire, "ednotes", [])
-                if ednote.get("role", "") == "dpaednoterole:picture"
-            ]
+            note.ednote
+            for note in dw_model.notepad_items(
+                notepad_role="dpaednoterole:picture", attrs=["ednote"]
+            )
         ),
         "",
     )
 
 
-def get_genre_note(context: Context) -> str:
+def get_genre_note(dw_model: DigitalwiresModel) -> str:
+    """Returns the genre note from the categories given by ``"role":
+    "dpaednoterole:genre"``.
+
+    :param dw_model: A model of the digitalwires message.
+    :return: The genre note as a string. If there are more than one, only the first
+        result is returned.
     """
-    Returns the genre note from the categories given by ``"role": "dpaednoterole:genre"``.
-    :param context: A context object of the digitalwires message.
-    :return: The genre note as a string. If there are more than one, only the first result is returned.
-    """
-    return find_first_in(
-        get_none_safe(context.digitalwire, "ednotes", []),
-        "ednote",
-        lambda cat: cat.get("role", "") == "dpaednoterole:genrenote",
+    return next(
+        iter(
+            note.ednote
+            for note in dw_model.notepad_items(
+                notepad_role="dpaednoterole:genrenote", attrs=["ednote"]
+            )
+        ),
+        "",
     )
 
 
-def get_embargo_note(context: Context) -> str:
+def get_embargo_note(dw_model: DigitalwiresModel) -> str:
+    """Returns the embargo note from the ednotes given by ``"role":
+    "dpaednoterole:embargo"``
+
+    :param dw_model: A model of the digitalwires message.
+    :return: The embargo note as a string. If there are more than one, only the first
+        result is returned.
     """
-    Returns the embargo note from the ednotes given by ``"role": "dpaednoterole:embargo"``
-    :param context: A context object of the digitalwires message.
-    :return: The embargo note as a string. If there are more than one, only the first result is returned.
-    """
-    return find_first_in(
-        get_none_safe(context.digitalwire, "ednotes", []),
-        "ednote",
-        lambda cat: cat.get("role", "") == "dpaednoterole:embargo",
+    return next(
+        iter(
+            note.ednote
+            for note in dw_model.notepad_items(
+                notepad_role="dpaednoterole:embargo", attrs=["ednote"]
+            )
+        ),
+        "",
     )

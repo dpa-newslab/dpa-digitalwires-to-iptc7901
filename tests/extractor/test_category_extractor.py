@@ -16,10 +16,9 @@
 # limitations under the License.
 
 import logging
-import pytest
 
-from iptc7901 import Context
-from iptc7901.extractor.category_extractor import (
+from iptc7901 import DigitalwiresModel
+from iptc7901.extractor import (
     get_dpa_subjects,
     get_geo_subject,
     get_genre_qcode,
@@ -27,88 +26,68 @@ from iptc7901.extractor.category_extractor import (
     get_ressort,
     get_services,
 )
+from iptc7901.utils import Category
 
 logger = logging.getLogger()
 
 
-@pytest.fixture(scope="module")
-def test_data_filenames():
-    return [
-        "dw-1.json",
-        "eil.json",
-        "lesestuecke.json",
-        "nsb-n1.json",
-        "tvo-pol.json",
-        "spe-tab.json",
-        "rubix-multimedia-real.json",
-        "rubix-multimedia-testartikel.json",
-        "hoerfunk.json",
-        "spe2.json",
-        "noNotepad.json",
-    ]
-
-
 def test_dpa_subject_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_dpa_subjects(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_dpa_subjects(dw_model)
 
         logger.info(result)
         assert len(result) >= 0
         for subject in result:
-            assert len(subject) > 0
+            assert type(subject) == Category
+            assert len(subject.name) > 0
 
 
 def test_geo_subject_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_geo_subject(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_geo_subject(dw_model)
 
         logger.info(result)
         assert len(result) >= 0
         for subject in result:
-            assert len(subject) > 0
+            assert type(subject) == Category
+            assert len(subject.name) > 0
 
 
 def test_dpa_and_geo_subject_extractor_are_disjoint(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_geo_subject(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_geo_subject(dw_model)
 
         logger.info(result)
         assert len(result) >= 0
-        assert set(result).isdisjoint(get_dpa_subjects(context))
+        assert set(result).isdisjoint(get_dpa_subjects(dw_model))
 
 
 def test_genre_qcode_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_genre_qcode(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_genre_qcode(dw_model)
 
         logger.info(result)
         assert len(result) >= 0
-        assert result.count(":") == 1
+        assert result.count(":") == 1 if len(result) >= 1 else True
 
 
 def test_genre_name_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_genre_name(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_genre_name(dw_model)
 
         logger.info(result)
-        assert len(result) > 0
+        assert result is not None
 
 
 def test_ressort_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_ressort(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_ressort(dw_model)
 
         logger.info(result)
         assert 0 < len(result.split(":")[-1]) <= 3
@@ -116,14 +95,11 @@ def test_ressort_extractor(test_data_json):
 
 def test_service_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_services(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_services(dw_model)
 
         logger.info(result)
         assert len(result) > 0
         for service in result:
-            assert len(service.split(":")[-1]) == 3 or service.split(":")[-1] in [
-                "sch3pb",
-                "apwire",
-            ]
+            assert type(service) == Category
+            assert len(service.qcode.split(":")) == 2

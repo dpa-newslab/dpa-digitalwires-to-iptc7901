@@ -17,7 +17,7 @@
 
 import logging
 
-from iptc7901.renderer.content_renderer import (
+from iptc7901.renderer import (
     render_article,
     render_date_time,
     render_closing_line,

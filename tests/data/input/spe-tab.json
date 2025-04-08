@@ -40,11 +40,6 @@
    "categories":[
       {
          "type":"dnltype:wire",
-         "name":"sch3pb",
-         "qcode":"dnlsrv:sch3pb"
-      },
-      {
-         "type":"dnltype:wire",
          "name":"spe",
          "qcode":"dpasrv:spe"
       },

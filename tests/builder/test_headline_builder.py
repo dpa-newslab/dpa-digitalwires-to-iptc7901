@@ -18,9 +18,9 @@
 import logging
 import pytest
 
-from iptc7901.Context import Context
-from iptc7901.builder.headline_builder import HeadlineDeBuilder
-from iptc7901.utils import Symbols
+from iptc7901 import DigitalwiresModel
+from iptc7901.builder import HeadlineDeBuilder
+from iptc7901.utils import BELL
 
 logger = logging.getLogger()
 
@@ -32,8 +32,8 @@ def test_data_filenames():
 
 def test_correction(test_data_json):
     dw = test_data_json["dw-1.json"]
-    context = Context(dw)
-    builder = HeadlineDeBuilder(context)
+    dw_model = DigitalwiresModel(dw)
+    builder = HeadlineDeBuilder(dw_model)
     result = builder.build()
 
     logger.info(result)
@@ -43,12 +43,12 @@ def test_correction(test_data_json):
 
 def test_eil(test_data_json):
     dw = test_data_json["eil.json"]
-    context = Context(dw)
-    builder = HeadlineDeBuilder(context)
+    dw_model = DigitalwiresModel(dw)
+    builder = HeadlineDeBuilder(dw_model)
     result = builder.build()
 
     logger.info(result)
     assert len(result) > 0
     assert len(result.split("\n")) == 2
     assert result.find("Eil") >= 0
-    assert result.count(Symbols.BELL) == 5
+    assert result.count(BELL) == 5

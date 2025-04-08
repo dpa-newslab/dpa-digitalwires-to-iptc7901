@@ -16,7 +16,7 @@
 # limitations under the License.
 
 import logging
-from iptc7901.utils.WordUtils import article_html_to_text, TextHTML2Text
+from iptc7901.utils.word_utils import article_html_to_text, TextHTML2Text
 
 logger = logging.getLogger()
 

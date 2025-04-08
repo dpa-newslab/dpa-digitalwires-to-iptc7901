@@ -16,7 +16,7 @@
 # limitations under the License.
 
 import logging
-from iptc7901.renderer.notepad_renderer import (
+from iptc7901.renderer import (
     render_public_notepad,
     render_nonpublic_notepad,
 )

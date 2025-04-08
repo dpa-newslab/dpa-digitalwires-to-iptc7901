@@ -16,10 +16,11 @@
 # limitations under the License.
 
 import logging
+
 import pytest
 
-from iptc7901.Context import Context
-from iptc7901.builder.content_builder import TextBuilder
+from iptc7901 import DigitalwiresModel
+from iptc7901.builder import TextBuilder
 
 logger = logging.getLogger()
 
@@ -31,10 +32,10 @@ def test_data_filenames():
 
 def test_text_builder(test_data_json):
     dw = test_data_json["dw-1.json"]
-    context = Context(dw)
-    builder = TextBuilder(context)
+    dw_model = DigitalwiresModel(dw)
+    builder = TextBuilder(dw_model)
     result = builder.build()
 
     logger.info(result)
     assert len(result) > 0
-    assert result.startswith(context.digitalwire.get("dateline", ""))
+    assert result.startswith(dw_model.get("dateline", ""))

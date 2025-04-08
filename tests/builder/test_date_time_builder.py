@@ -18,8 +18,8 @@
 import logging
 import pytest
 
-from iptc7901.Context import Context
-from iptc7901.builder.date_time_builder import DateTimeBuilder
+from iptc7901 import DigitalwiresModel
+from iptc7901.builder import DateTimeBuilder
 
 logger = logging.getLogger()
 
@@ -31,8 +31,8 @@ def test_data_filenames():
 
 def test_date_time_builder(test_data_json):
     dw = test_data_json["dw-1.json"]
-    context = Context(dw)
-    builder = DateTimeBuilder(context)
+    dw_model = DigitalwiresModel(dw)
+    builder = DateTimeBuilder(dw_model)
     result = builder.build()
 
     logger.info(result)

@@ -15,50 +15,48 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from iptc7901.Context import Context
-from iptc7901.builder.AbstractIptcBuilder import AbstractIptcBuilder
-from iptc7901.extractor.content_extractor import get_article, get_teaser
-from iptc7901.extractor.meta_extractor import get_dateline
-from iptc7901.extractor.notepad_extractor import get_closing_line
-from iptc7901.renderer.content_renderer import (
+from iptc7901.builder import AbstractIptcBuilder
+from iptc7901.digitalwires_model import DigitalwiresModel
+from iptc7901.extractor import get_article, get_teaser, get_closing_line, get_dateline
+from iptc7901.renderer import (
     render_article,
     render_teaser,
     render_closing_line,
 )
-from iptc7901.utils.CollectionUtils import extend_if_not_empty
+from iptc7901.utils.collection_utils import extend_if_not_empty
 
 
 class TextBuilder(AbstractIptcBuilder):
-    def __init__(self, context: Context):
-        super().__init__(context)
+    def __init__(self, dw_model: DigitalwiresModel):
+        super().__init__(dw_model)
 
     def build(self) -> str:
         result = []
         extend_if_not_empty(
-            result, render_article(self.context, get_dateline, [get_article])
+            result, render_article(self.dw_model, get_dateline, [get_article])
         )
 
         return "".join(result)
 
 
 class TeaserBuilder(AbstractIptcBuilder):
-    def __init__(self, context: Context):
-        super().__init__(context)
+    def __init__(self, dw_model: DigitalwiresModel):
+        super().__init__(dw_model)
 
     def build(self) -> str:
         result = []
-        extend_if_not_empty(result, render_teaser(self.context, [get_teaser]))
+        extend_if_not_empty(result, render_teaser(self.dw_model, [get_teaser]))
         return "".join(result)
 
 
 class ClosingLineBuilder(AbstractIptcBuilder):
-    def __init__(self, context: Context):
-        super().__init__(context)
+    def __init__(self, dw_model: DigitalwiresModel):
+        super().__init__(dw_model)
 
     def build(self) -> str:
         result = []
         extend_if_not_empty(
-            result, render_closing_line(self.context, [get_closing_line])
+            result, render_closing_line(self.dw_model, [get_closing_line])
         )
 
         return "".join(result)

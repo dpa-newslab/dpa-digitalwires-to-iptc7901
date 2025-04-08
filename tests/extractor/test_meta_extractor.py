@@ -15,12 +15,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import arrow
 import logging
-import pytest
 import re
 
-from iptc7901 import Context
+import arrow
+from jinja2.nodes import Keyword
+
+from iptc7901 import DigitalwiresModel
 from iptc7901.extractor.meta_extractor import (
     get_dateline,
     get_version_created,
@@ -29,32 +30,15 @@ from iptc7901.extractor.meta_extractor import (
     get_embargo,
     get_byline,
 )
+from iptc7901.utils import Category
 
 logger = logging.getLogger()
 
 
-@pytest.fixture(scope="module")
-def test_data_filenames():
-    return [
-        "dw-1.json",
-        "eil.json",
-        "lesestuecke.json",
-        "nsb-n1.json",
-        "tvo-pol.json",
-        "spe-tab.json",
-        "rubix-multimedia-real.json",
-        "rubix-multimedia-testartikel.json",
-        "hoerfunk.json",
-        "spe2.json",
-        "noNotepad.json",
-    ]
-
-
 def test_dateline_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_dateline(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_dateline(dw_model)
 
         logger.info(result)
         assert (
@@ -66,9 +50,8 @@ def test_dateline_extractor(test_data_json):
 
 def test_version_created_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_version_created(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_version_created(dw_model)
 
         logger.info(result)
         assert len(result) > 0
@@ -77,9 +60,8 @@ def test_version_created_extractor(test_data_json):
 
 def test_urgency_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_urgency(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_urgency(dw_model)
 
         logger.info(result)
         assert result > 0
@@ -87,21 +69,20 @@ def test_urgency_extractor(test_data_json):
 
 def test_keyword_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_keywords(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_keywords(dw_model)
 
         logger.info(result)
         assert len(result) >= 0
         for keyword in result:
-            assert len(keyword) > 0
+            assert type(keyword) == Category
+            assert len(keyword.name) > 0
 
 
 def test_embargo_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_embargo(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_embargo(dw_model)
 
         logger.info(result)
         assert arrow.get(result) is not None if result is not None else True
@@ -109,9 +90,8 @@ def test_embargo_extractor(test_data_json):
 
 def test_byline_extractor(test_data_json):
     for filename, file in test_data_json.items():
-        dw = file
-        context = Context(dw)
-        result = get_byline(context)
+        dw_model = DigitalwiresModel(file)
+        result = get_byline(dw_model)
 
         logger.info(result)
         assert len(result) >= 0

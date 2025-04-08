@@ -15,29 +15,35 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from iptc7901.builder.AbstractIptcBuilder import AbstractIptcBuilder
-from iptc7901.extractor.notepad_extractor import (
+from iptc7901.builder import AbstractIptcBuilder
+from iptc7901.digitalwires_model import DigitalwiresModel
+from iptc7901.extractor import (
     get_notepad_header,
     get_public_notepad,
     get_non_public_notepad,
 )
-from iptc7901.renderer.notepad_renderer import *
+from iptc7901.renderer import (
+    render_notepad_header,
+    render_public_notepad,
+    render_nonpublic_notepad,
+)
+from iptc7901.utils import extend_if_not_empty
 
 
 class NotepadBuilder(AbstractIptcBuilder):
-    def __init__(self, context: Context):
-        super().__init__(context)
+    def __init__(self, dw_model: DigitalwiresModel):
+        super().__init__(dw_model)
 
     def build(self) -> str:
         result = []
         extend_if_not_empty(
-            result, render_notepad_header(self.context, [get_notepad_header])
+            result, render_notepad_header(self.dw_model, [get_notepad_header])
         )
         extend_if_not_empty(
-            result, render_public_notepad(self.context, [get_public_notepad])
+            result, render_public_notepad(self.dw_model, [get_public_notepad])
         )
         extend_if_not_empty(
-            result, render_nonpublic_notepad(self.context, [get_non_public_notepad])
+            result, render_nonpublic_notepad(self.dw_model, [get_non_public_notepad])
         )
 
         return "\n".join(result)

@@ -15,21 +15,21 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from iptc7901.Context import Context
-from iptc7901.builder.AbstractIptcBuilder import AbstractIptcBuilder
-from iptc7901.extractor.meta_extractor import get_version_created
-from iptc7901.renderer.content_renderer import render_date_time
-from iptc7901.utils.CollectionUtils import extend_if_not_empty
+from iptc7901.builder import AbstractIptcBuilder
+from iptc7901.digitalwires_model import DigitalwiresModel
+from iptc7901.extractor import get_version_created
+from iptc7901.renderer import render_date_time
+from iptc7901.utils import extend_if_not_empty
 
 
 class DateTimeBuilder(AbstractIptcBuilder):
-    def __init__(self, context: Context):
-        super().__init__(context)
+    def __init__(self, dw_model: DigitalwiresModel):
+        super().__init__(dw_model)
 
     def build(self) -> str:
         result = []
         extend_if_not_empty(
-            result, render_date_time(self.context, [get_version_created])
+            result, render_date_time(self.dw_model, [get_version_created])
         )
 
         return "\n".join(result)

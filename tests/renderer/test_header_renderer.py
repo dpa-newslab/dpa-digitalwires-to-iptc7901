@@ -16,7 +16,8 @@
 # limitations under the License.
 
 import logging
-from iptc7901.renderer.header_renderer import render_header, render_subject
+from iptc7901.renderer import render_header, render_subject
+from iptc7901.utils import Category
 
 logger = logging.getLogger()
 
@@ -33,7 +34,15 @@ def test_header_renderer():
 
 def test_subject_renderer():
     result = render_subject(
-        None, [lambda c: ["Foo", "bar", "baz"], lambda c: ["Lorem", "ipsum"]]
+        None,
+        [
+            lambda c: [
+                Category(name="Foo"),
+                Category(name="bar"),
+                Category(name="baz"),
+            ],
+            lambda c: [Category(name="Lorem"), Category(name="ipsum")],
+        ],
     )
 
     logger.info(result)

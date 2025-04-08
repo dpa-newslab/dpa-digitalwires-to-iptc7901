@@ -16,10 +16,11 @@
 # limitations under the License.
 
 import logging
+
 import pytest
 
-from iptc7901.Context import Context
-from iptc7901.builder.notepad_builder import NotepadBuilder
+from iptc7901 import DigitalwiresModel
+from iptc7901.builder import NotepadBuilder
 
 logger = logging.getLogger()
 
@@ -31,8 +32,8 @@ def test_data_filenames():
 
 def test_notepad_builder(test_data_json):
     dw = test_data_json["dw-1.json"]
-    context = Context(dw)
-    builder = NotepadBuilder(context)
+    dw_model = DigitalwiresModel(dw)
+    builder = NotepadBuilder(dw_model)
     result = builder.build()
 
     logger.info(result)

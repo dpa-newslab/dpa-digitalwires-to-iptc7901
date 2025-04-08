@@ -38,3 +38,34 @@ def result_data_iptc(result_data_filenames):
         with open(file_path) as f:
             result_iptc[filename] = f.read()
     return result_iptc
+
+
+@pytest.fixture(scope="module")
+def test_data_filenames():
+    return [
+        "dw-1.json",
+        "eil.json",
+        "lesestuecke.json",
+        "nsb-n1.json",
+        "tvo-pol.json",
+        "spe-tab.json",
+        "rubix-multimedia-real.json",
+        "rubix-multimedia-testartikel.json",
+        "hoerfunk.json",
+        "spe2.json",
+        "noNotepad.json",
+        "noContent.json",
+        "emptyParagraph.json",
+    ]
+
+
+@pytest.fixture(scope="module")
+def result_data_filenames():
+    return [
+        "dw-1.iptc",
+        "eil.iptc",
+        "lesestuecke.iptc",
+        "nsb-n1.iptc",
+        "tvo-pol.iptc",
+        "spe-tab.iptc",
+    ]

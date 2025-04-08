@@ -17,28 +17,28 @@
 
 from typing import Callable
 
-from iptc7901.Context import Context
-from iptc7901.utils.Mappings import service_mnemonic_map, service_to_iptc_agency_map
+from iptc7901.digitalwires_model import DigitalwiresModel
+from iptc7901.utils import service_mnemonic_map, service_to_iptc_agency_map, Category
 
 
 def render_header(
-    context: Context,
+    dw_model: DigitalwiresModel,
     word_count: int,
-    extract_service: Callable[[Context], str],
+    extract_service: Callable[[DigitalwiresModel], str],
     service_sequence_number: int,
-    extract_urgency: Callable[[Context], int],
-    extract_ressort: Callable[[Context], str],
+    extract_urgency: Callable[[DigitalwiresModel], int],
+    extract_ressort: Callable[[DigitalwiresModel], str],
     agency_sequence_number: int,
 ) -> str:
-    """
-    Render the IPTC header based on the extractor functions. The header looks like this:
-    .. code-block:: text
+    """Render the IPTC header based on the extractor functions. The header looks like
+    this: .. code-block:: text.
 
-        <DNST><DLFD> <PRIO> <RESS> <WANZ>  <AGNT> <ALFD>  <BEZU>
+    <DNST><DLFD> <PRIO> <RESS> <WANZ>  <AGNT> <ALFD>  <BEZU>
 
     where ``DNST`` is the 3-character abbreviation of the service,
 
-    ``DLFD`` is a 4-digit number, either ``'0000'`` or the number given by ``service_sequence_number``,
+    ``DLFD`` is a 4-digit number, either ``'0000'`` or the number given by
+    ``service_sequence_number``,
 
     ``PRIO`` is the urgency,
 
@@ -46,32 +46,38 @@ def render_header(
 
     ``WANZ`` is the word count, without headline and notepad,
 
-    ``AGNT`` is the agency name, which is derived by the result from ``extract_service`` and mapped by ``iptc_7901.utils.Mappings.service_to_iptc_agency_map``.
+    ``AGNT`` is the agency name, which is derived by the result from ``extract_service``
+    and mapped by ``iptc_7901.utils.Mappings.service_to_iptc_agency_map``.
 
-    ``ALFD`` is the agency squence number, either ``'0000'`` or the number given by ``agency_sequence_number``,
+    ``ALFD`` is the agency squence number, either ``'0000'`` or the number given by
+    ``agency_sequence_number``,
 
     ``BEZU`` is empty
 
-    :param context: The context object of the digitalwires message
-    :param word_count: The number of words in the text, excluding the headline and notepad
-    :param extract_service: A function return the service code, which is mapped to the 3-character abbreviation by ``iptc_7901.utils.Mappings.service_mnemonic_map``.
-    :param service_sequence_number: The service sequence number, which is set to 4 digits with leading zeros.
+    :param dw_model: A model of the digitalwires message.
+    :param word_count: The number of words in the text, excluding the headline and
+        notepad
+    :param extract_service: A function return the service code, which is mapped to the
+        3-character abbreviation by ``iptc_7901.utils.Mappings.service_mnemonic_map``.
+    :param service_sequence_number: The service sequence number, which is set to 4
+        digits with leading zeros.
     :param extract_urgency: A function returning the urgency.
     :param extract_ressort: A function returning the ressort.
     :param agency_sequence_number: The sequence number for the agency.
     :return: A string representation of the IPTC header.
     """
-    service = extract_service(context)
-    return f"{service_mnemonic_map.get(service, service)}{service_sequence_number:04d} {str(extract_urgency(context))} {extract_ressort(context).split(':')[-1]} {word_count}  {service_to_iptc_agency_map.get(service, 'dpa')} {agency_sequence_number:04d}"
+    service = extract_service(dw_model)
+    return f"{service_mnemonic_map.get(service, service)}{service_sequence_number:04d} {str(extract_urgency(dw_model))} {extract_ressort(dw_model).split(':')[-1]} {word_count}  {service_to_iptc_agency_map.get(service, 'dpa')} {agency_sequence_number:04d}"
 
 
 def render_subject(
-    context: Context, extractors: list[Callable[[Context], list[str]]]
+    dw_model: DigitalwiresModel,
+    extractors: list[Callable[[DigitalwiresModel], list[Category]]],
 ) -> list[str]:
-    """
-    Renders the keyword list for the IPTC header.
-    :param context: The context object of the digitalwires message
+    """Renders the keyword list for the IPTC header.
+
+    :param dw_model: A model of the digitalwires message.
     :param extractors: A list of extractor functions used to extract a list of keywords.
     :return: A flattened list of keywords.
     """
-    return [subj for extractor in extractors for subj in extractor(context)]
+    return [subj.name for extractor in extractors for subj in extractor(dw_model)]

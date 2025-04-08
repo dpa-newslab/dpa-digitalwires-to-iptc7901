@@ -17,8 +17,8 @@
 
 import logging
 
-from iptc7901 import Context
-from iptc7901.renderer.headline_renderer import (
+from iptc7901 import DigitalwiresModel
+from iptc7901.renderer import (
     render_title,
     render_correction,
     render_ednote_de,
@@ -26,7 +26,7 @@ from iptc7901.renderer.headline_renderer import (
     render_byline,
     render_prio,
 )
-from iptc7901.utils import Symbols
+from iptc7901.utils import BELL
 
 logger = logging.getLogger()
 
@@ -53,8 +53,8 @@ def test_correction_renderer_de():
         "language": "de",
         "article_html": '<section class="main"></section>',
     }
-    context = Context(dw)
-    result = render_correction(context, [lambda c: "Foo bar"])
+    dw_model = DigitalwiresModel(dw)
+    result = render_correction(dw_model, [lambda c: "Foo bar"])
 
     logger.info(result)
     assert len(result) == 1
@@ -68,8 +68,8 @@ def test_correction_renderer_de_cancled():
         "pubstatus": "canceled",
         "article_html": '<section class="main"></section>',
     }
-    context = Context(dw)
-    result = render_correction(context, [lambda c: "Foo bar"])
+    dw_model = DigitalwiresModel(dw)
+    result = render_correction(dw_model, [lambda c: "Foo bar"])
 
     logger.info(result)
     assert len(result) == 1
@@ -80,10 +80,10 @@ def test_correction_renderer_en():
     dw = {
         "signal": "sig:update",
         "language": "en",
-        "article_html": '<section class="main"></section>'
+        "article_html": '<section class="main"></section>',
     }
-    context = Context(dw)
-    result = render_correction(context, [lambda c: "Foo bar"])
+    dw_model = DigitalwiresModel(dw)
+    result = render_correction(dw_model, [lambda c: "Foo bar"])
 
     logger.info(result)
     assert len(result) == 1
@@ -100,9 +100,9 @@ def test_ednote_de_renderer():
 
 def test_genre_renderer():
     dw = {"language": "de", "article_html": '<section class="main"></section>'}
-    context = Context(dw)
+    dw_model = DigitalwiresModel(dw)
     result = render_genre(
-        context,
+        dw_model,
         lambda c: "dpatextgenre:9",
         lambda c: "Gesamtzusammenfassung",
         lambda c: "Foo",
@@ -115,9 +115,9 @@ def test_genre_renderer():
 
 def test_genre_renderer_dashless():
     dw = {"language": "de", "article_html": '<section class="main"></section>'}
-    context = Context(dw)
+    dw_model = DigitalwiresModel(dw)
     result = render_genre(
-        context,
+        dw_model,
         lambda c: "dpatextgenre:8",
         lambda c: "Feiertagszusammenfassung",
         lambda c: "Foo",
@@ -138,28 +138,28 @@ def test_byline_renderer():
 
 def test_prio_renderer_prio1():
     dw = {"language": "de", "article_html": '<section class="main"></section>'}
-    context = Context(dw)
-    result = render_prio(context, [lambda c: 1, lambda c: 99])
+    dw_model = DigitalwiresModel(dw)
+    result = render_prio(dw_model, [lambda c: 1, lambda c: 99])
 
     logger.info(result)
     assert len(result) == 1
-    assert result[0] == "(Blitz " + Symbols.BELL * 10 + ")"
+    assert result[0] == "(Blitz " + BELL * 10 + ")"
 
 
 def test_prio_renderer_prio2():
     dw = {"language": "de", "article_html": '<section class="main"></section>'}
-    context = Context(dw)
-    result = render_prio(context, [lambda c: 2, lambda c: 99])
+    dw_model = DigitalwiresModel(dw)
+    result = render_prio(dw_model, [lambda c: 2, lambda c: 99])
 
     logger.info(result)
     assert len(result) == 1
-    assert result[0] == "(Eil " + Symbols.BELL * 5 + ")"
+    assert result[0] == "(Eil " + BELL * 5 + ")"
 
 
 def test_prio_renderer_prio3():
     dw = {"language": "de", "article_html": '<section class="main"></section>'}
-    context = Context(dw)
-    result = render_prio(context, [lambda c: 3, lambda c: 99])
+    dw_model = DigitalwiresModel(dw)
+    result = render_prio(dw_model, [lambda c: 3, lambda c: 99])
 
     logger.info(result)
     assert len(result) == 1

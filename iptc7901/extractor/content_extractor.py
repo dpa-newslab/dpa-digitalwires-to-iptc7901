@@ -15,31 +15,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from iptc7901.Context import Context
+from iptc7901.digitalwires_model import DigitalwiresModel
 
 
-def get_article(context: Context) -> str:
-    """
-    Returns the article.
-    :param context: A context object of the digitalwires message.
+def get_article(dw_model: DigitalwiresModel) -> str:
+    """Returns the article.
+
+    :param dw_model: A model of the digitalwires message.
     :return: The article as a string in HTML.
     """
-    return context.digitalwire.get("article_html", "")
+    return dw_model["article_html"]
 
 
-def get_teaser(context: Context) -> str:
-    """
-    Returns the teaser.
-    :param context: A context object of the digitalwires message.
+def get_teaser(dw_model: DigitalwiresModel) -> str:
+    """Returns the teaser.
+
+    :param dw_model: A model of the digitalwires message.
     :return: The teaser as a string.
     """
-    return context.digitalwire.get("teaser", "")
+    return dw_model["teaser"]
 
 
-def get_headline(context: Context) -> str:
-    """
-    Returns the headline.
-    :param context: A context object of the digitalwires message.
+def get_headline(dw_model: DigitalwiresModel) -> str:
+    """Returns the headline.
+
+    :param dw_model: A model of the digitalwires message.
     :return: The headline as a string.
     """
-    return context.digitalwire.get("headline", "")
+    return dw_model["headline"]

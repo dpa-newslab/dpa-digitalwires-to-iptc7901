@@ -16,47 +16,15 @@
 # limitations under the License.
 
 import logging
-import pytest
+import re
 
-from collections.abc import Generator
 from iptc7901 import convert_to_iptc
 
 logger = logging.getLogger()
 
 
-@pytest.fixture(scope="module")
-def test_data_filenames():
-    return [
-        "dw-1.json",
-        "eil.json",
-        "lesestuecke.json",
-        "nsb-n1.json",
-        "tvo-pol.json",
-        "spe-tab.json",
-        "rubix-multimedia-real.json",
-        "rubix-multimedia-testartikel.json",
-        "hoerfunk.json",
-        "spe2.json",
-        "noNotepad.json",
-        "noContent.json",
-        "emptyParagraph.json"
-    ]
-
-
-@pytest.fixture(scope="module")
-def result_data_filenames():
-    return [
-        "dw-1.iptc",
-        "eil.iptc",
-        "lesestuecke.iptc",
-        "nsb-n1.iptc",
-        "tvo-pol.iptc",
-        "spe-tab.iptc"
-    ]
-
-
 def test_single_text_converter(test_data_json, result_data_iptc):
-    filename = "emptyParagraph.json"
+    filename = "dw-1.json"
     results = convert_to_iptc(test_data_json[filename])
 
     for service, result in results.items():
@@ -73,18 +41,6 @@ def test_single_text_converter(test_data_json, result_data_iptc):
 
 
 def test_text_builder(test_data_json, result_data_iptc):
-    def gen() -> Generator[int, str, None]:
-        sequence_name = yield 1
-        dpa_sequence = 21
-        other_sequence = 23
-        while True:
-            if sequence_name == "dpa":
-                yield dpa_sequence
-                dpa_sequence += 1
-            else:
-                yield other_sequence
-                other_sequence += 1
-
     results = {filename: convert_to_iptc(dw) for filename, dw in test_data_json.items()}
 
     logger.info(results)
@@ -101,5 +57,41 @@ def test_text_builder(test_data_json, result_data_iptc):
             if filename.replace(".json", ".iptc") in result_data_iptc
         ]
         assert any(compares) if len(compares) > 0 else True
-        if filename.replace(".json", ".iptc") not in result_data_iptc:
-            logger.info(results[filename])
+        logger.info(results[filename])
+
+
+def test_with_sequence(test_data_json):
+    from collections import defaultdict
+    from itertools import count
+
+    _sequences = defaultdict(count)
+
+    def find_sequence(key):
+        return _sequences[key]
+
+    old_sequence_values = {}
+    for filename, dw in test_data_json.items():
+        results = convert_to_iptc(dw, find_sequence)
+
+        logger.info(f"Testing {filename}:")
+        logger.info(results)
+        for iptc in results.values():
+            assert len(iptc) > 0
+            assert iptc.startswith("\x01")
+            sequence_regex = r"([a-zA-Z]{3,}) ?(\d{4})"
+            sequence_numbers = re.findall(sequence_regex, iptc.split("\n")[0])
+            assert len(sequence_numbers) == 2
+            logging.info(sequence_numbers)
+            assert int(sequence_numbers[0][1]) >= 0
+            assert int(sequence_numbers[1][1]) >= 0
+            if sequence_numbers[0][0] in old_sequence_values:
+                assert old_sequence_values[sequence_numbers[0][0]] + 1 == int(
+                    sequence_numbers[0][1]
+                )
+            if sequence_numbers[1][0] in old_sequence_values:
+                assert old_sequence_values[sequence_numbers[1][0]] + 1 == int(
+                    sequence_numbers[1][1]
+                )
+            old_sequence_values[sequence_numbers[0][0]] = int(sequence_numbers[0][1])
+            old_sequence_values[sequence_numbers[1][0]] = int(sequence_numbers[1][1])
+            assert iptc.endswith("\x7f\n\x7f\x04")
